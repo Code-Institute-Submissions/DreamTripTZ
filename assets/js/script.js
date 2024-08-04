@@ -14,7 +14,7 @@ function init() {
     startButton.addEventListener('click', start)
 }
 
-function start(event) {
+function start() {
     img.src = "assets/images/airplane-clouds.jpg";
     img.alt = "Airplane on sky during golden hour";
 
