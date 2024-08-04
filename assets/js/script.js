@@ -26,7 +26,7 @@ function start() {
 
 function generateButtons() {
     for (const category in quizData) {
-        choices.innerHTML += `<button>Text</button>`;
+        choices.innerHTML += `<button>${category}</button>`;
     }
 }
 
