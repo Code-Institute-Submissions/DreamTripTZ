@@ -1,3 +1,5 @@
+import quizData from './quizData.js';
+
 // Variables
 const img = document.getElementById('img');
 
