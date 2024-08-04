@@ -3,6 +3,7 @@ import quizData from './quizData.js';
 // Variables
 const img = document.getElementById('img');
 const startButton = document.getElementById('start-button');
+const paragraph = document.getElementById('paragraph');
 
 // Methods
 function init() {
@@ -15,6 +16,8 @@ function init() {
 function start(event) {
     img.src = "assets/images/airplane-clouds.jpg";
     img.alt = "Airplane on sky during golden hour";
+
+    paragraph.innerHTML = "What's the ideal purpose for your Trip?";    
 }
 
 // Inits &  Event Listeners
