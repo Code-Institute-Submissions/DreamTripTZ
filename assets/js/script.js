@@ -4,6 +4,7 @@ import quizData from './quizData.js';
 const img = document.getElementById('img');
 const startButton = document.getElementById('start-button');
 const paragraph = document.getElementById('paragraph');
+const choices = document.getElementById('choices');
 
 // Methods
 function init() {
@@ -18,6 +19,15 @@ function start(event) {
     img.alt = "Airplane on sky during golden hour";
 
     paragraph.innerHTML = "What's the ideal purpose for your Trip?";    
+
+    startButton.style.display = 'none';
+    generateButtons();
+}
+
+function generateButtons() {
+    for (const category in quizData) {
+        choices.innerHTML += `<button>Text</button>`;
+    }
 }
 
 // Inits &  Event Listeners
