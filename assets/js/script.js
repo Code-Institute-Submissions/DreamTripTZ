@@ -6,6 +6,8 @@ const startButton = document.getElementById('start-button');
 const paragraph = document.getElementById('paragraph');
 const choices = document.getElementById('choices');
 
+let userInput = [];
+
 // Methods
 function init() {
     img.src = "assets/images/flag-tanzania.jpg";
@@ -30,8 +32,14 @@ function generateButtons() {
     }
     const buttons = document.getElementById('choices').getElementsByTagName('button');
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', generateButtons);
+        buttons[i].addEventListener('click', getNewButtons);
     }
+}
+
+function getNewButtons(event) {
+    event = this;
+    const data = this.innerHTML;
+    userInput.push(data);
 }
 
 // Inits &  Event Listeners
