@@ -1,5 +1,5 @@
 // The Structure of this Object was created and suggested by an AI.
-// It is my Challenge to use this Data and implement it in my Quiz. 
+// It is my Challenge to use this structure and implement it in my Quiz. 
 
 const quizData = {
     relaxation: {
