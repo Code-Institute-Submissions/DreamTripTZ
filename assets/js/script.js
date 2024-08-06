@@ -27,9 +27,31 @@ function start() {
     generateButtons();
 }
 
-function generateButtons() {
-    for (const category in quizData) {
-        choices.innerHTML += `<button>${category}</button>`;
+function generateButtons(value1, value2, value3) {
+    choices.innerHTML = '';
+
+    // Dynamically updates the content of the choices and paragraph elements  
+    if (userInput.length === 1) {
+        for (const category in quizData[value1].options) {
+            choices.innerHTML += `<button>${category}</button>`;
+        }
+        paragraph.innerHTML = quizData[value1].question;
+
+    } else if (userInput.length === 2) {
+        for (const category in quizData[value1].options[value2].options) {
+            choices.innerHTML += `<button>${category}</button>`;
+        }
+        paragraph.innerHTML = quizData[value1].options[value2].question;
+
+    } else if (userInput.length === 3) {
+        choices.innerHTML = quizData[value1].options[value2].options[value3].destination;
+
+        paragraph.innerHTML = quizData[value1].options[value2].options[value3].answer;
+    }
+    else {
+        for (const category in quizData) {
+            choices.innerHTML += `<button>${category}</button>`;
+        }
     }
     const buttons = document.getElementById('choices').getElementsByTagName('button');
     for (let i = 0; i < buttons.length; i++) {
@@ -56,6 +78,8 @@ function getNewButtons(event) {
             console.error("getNewButtons: userInput.length is too long");
             break;
     }
+
+    generateButtons(selectedChoice1, selectedChoice2, selectedChoice3)
 }
 
 // Inits &  Event Listeners
