@@ -7,6 +7,7 @@ const paragraph = document.getElementById('paragraph');
 const choices = document.getElementById('choices');
 
 let userInput = [];
+let selectedChoice1, selectedChoice2, selectedChoice3;
 
 // Methods
 function init() {
@@ -40,6 +41,21 @@ function getNewButtons(event) {
     event = this;
     const data = this.innerHTML;
     userInput.push(data);
+
+    switch (userInput.length) {
+        case 1:
+            selectedChoice1 = userInput[0];
+            break;
+        case 2:
+            selectedChoice2 = userInput[1];
+            break;
+        case 3:
+            selectedChoice3 = userInput[2];
+            break;
+        default:
+            console.error("getNewButtons: userInput.length is too long");
+            break;
+    }
 }
 
 // Inits &  Event Listeners
