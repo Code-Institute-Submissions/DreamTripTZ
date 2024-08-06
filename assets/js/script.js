@@ -28,6 +28,10 @@ function generateButtons() {
     for (const category in quizData) {
         choices.innerHTML += `<button>${category}</button>`;
     }
+    const buttons = document.getElementById('choices').getElementsByTagName('button');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', generateButtons);
+    }
 }
 
 // Inits &  Event Listeners
