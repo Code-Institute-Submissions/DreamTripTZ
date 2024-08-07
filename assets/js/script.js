@@ -37,11 +37,17 @@ function generateButtons(value1, value2, value3) {
         }
         paragraph.innerHTML = quizData[value1].question;
 
+        img.src = quizData[value1].image.src;
+        img.alt = quizData[value1].image.alt;
+
     } else if (userInput.length === 2) {
         for (const category in quizData[value1].options[value2].options) {
             choices.innerHTML += `<button>${category}</button>`;
         }
         paragraph.innerHTML = quizData[value1].options[value2].question;
+
+        img.src = quizData[value1].options[value2].image.src;
+        img.alt = quizData[value1].options[value2].image.alt;
 
     } else if (userInput.length === 3) {
         getResult(value1, value2, value3);
