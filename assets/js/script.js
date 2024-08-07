@@ -44,9 +44,7 @@ function generateButtons(value1, value2, value3) {
         paragraph.innerHTML = quizData[value1].options[value2].question;
 
     } else if (userInput.length === 3) {
-        choices.innerHTML = quizData[value1].options[value2].options[value3].destination;
-
-        paragraph.innerHTML = quizData[value1].options[value2].options[value3].answer;
+        getResult(value1, value2, value3);
     }
     else {
         for (const category in quizData) {
@@ -80,6 +78,14 @@ function getNewButtons(event) {
     }
 
     generateButtons(selectedChoice1, selectedChoice2, selectedChoice3)
+}
+
+function getResult(value1, value2, value3) {
+    const finalChoice = quizData[value1].options[value2].options[value3]
+    
+    paragraph.innerHTML = finalChoice.answer;
+
+    choices.innerHTML = `<p>${finalChoice.destination}</p>`;
 }
 
 // Inits &  Event Listeners
