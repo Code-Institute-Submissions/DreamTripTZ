@@ -92,6 +92,11 @@ function getResult(value1, value2, value3) {
     paragraph.innerHTML = finalChoice.answer;
 
     choices.innerHTML = `<p>${finalChoice.destination}</p>`;
+
+    // Restart button
+    userInput = [];
+    startButton.style.display = '';
+    startButton.innerHTML = "Test again!";
 }
 
 // Inits &  Event Listeners
