@@ -11,9 +11,6 @@ let selectedChoice1, selectedChoice2, selectedChoice3;
 
 // Methods
 function init() {
-    img.src = "assets/images/flag-tanzania.jpg";
-    img.alt = "Tanzania flag grunge"
-
     startButton.addEventListener('click', start)
 }
 
@@ -100,4 +97,4 @@ function getResult(value1, value2, value3) {
 }
 
 // Inits &  Event Listeners
-init(); 
+init();     
