@@ -24,7 +24,7 @@ const quizData = {
                         link: ''
                     }
                 },
-                image: {}
+                image: { alt: 'A close-up of an oil burner with a lit candle', src: 'assets/images/oil-burner.jpg' }
             },
             beach: {
                 question: 'What is your preferred climate?',
@@ -45,7 +45,7 @@ const quizData = {
                         link: ''
                     }
                 },
-                image: {}
+                image: { alt: 'Aerial view of Zanzibar Beach', src: 'assets/images/zanzibar-beach.jpg' }
             },
             mountain: {
                 question: 'What kind of activities would you like to include in your mountain retreat?',
@@ -66,7 +66,7 @@ const quizData = {
                         link: ''
                     }
                 },
-                image: {}
+                image: { alt: 'A panoramic mountain landscape', src: 'assets/images/green-mountains.jpg' }
             }
         },
         image: { alt: 'White hammock bed', src: 'assets/images/hammock-bed.jpg' }
@@ -93,7 +93,7 @@ const quizData = {
                         link: ''
                     }
                 },
-                image: {}
+                image: { alt: 'Capture of a giraffe behind bush', src: 'assets/images/giraffe-behind-bush.jpg' }
             },
             moderate: {
                 question: 'What kind of moderate adventure activities do you prefer?',
@@ -114,7 +114,7 @@ const quizData = {
                         link: ''
                     }
                 },
-                image: {}
+                image: { alt: 'Camping tent in the jungle', src: 'assets/images/camping-jungle.jpg' }
             },
             intense: {
                 question: 'What type of intense adventure activities do you prefer?',
@@ -135,7 +135,7 @@ const quizData = {
                         link: ''
                     }
                 },
-                image: {}
+                image: { alt: 'View of Mount Kilimanjaro', src: 'assets/images/kilimanjaro.jpg' }
             }
         },
         image: { alt: 'Giraffe spotting on safari', src: 'assets/images/giraffe-safari.jpg' }
@@ -162,7 +162,7 @@ const quizData = {
                         link: ''
                     }
                 },
-                image: {}
+                image: { alt: 'Stone Town Zanzibar', src: 'assets/images/stone-town.jpg' }
             },
             science: {
                 question: 'What area of science and technology are you most interested in?',
@@ -183,7 +183,7 @@ const quizData = {
                         link: ''
                     }
                 },
-                image: {}
+                image: { alt: 'School books on a shelf', src: 'assets/images/school-books.jpg' }
             },
             arts: {
                 question: 'What type of arts and literature experiences are you looking for?',
@@ -204,7 +204,7 @@ const quizData = {
                         link: ''
                     }
                 },
-                image: {}
+                image: { alt: 'Stacks of large spools of twine and rope', src: 'assets/images/spools.jpg' }
             }
         },
         image: { alt: 'Wood sculpture on shelf', src: 'assets/images/wood-sculpture.jpg' }
