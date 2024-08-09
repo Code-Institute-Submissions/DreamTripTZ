@@ -18,6 +18,19 @@ p {
 }
 
 /* Layout and Containers */
+header {
+    margin: 0 auto;
+    min-height: 120px;
+    width: 300px;
+    color: white;
+    box-shadow: 0 1px 8px gray;
+    background:
+        /* https://codepen.io/radioprog/pen/VevoYW */
+        linear-gradient(to right bottom,
+            #10631f 38%, #8d750b 0, #8d750b 42%, #000 0,
+            #000 58%, #6b5909 0, #8d750b 62%, #006185 0);
+}
+
 section {
     width: fit-content;
     margin: auto;
