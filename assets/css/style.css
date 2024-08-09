@@ -23,7 +23,8 @@ header {
     min-height: 120px;
     width: 300px;
     color: white;
-    box-shadow: 0 1px 8px gray;
+    box-shadow: 0 0px 8px gray;
+    border-radius: 8px;
     background:
         /* https://codepen.io/radioprog/pen/VevoYW */
         linear-gradient(to right bottom,
@@ -35,7 +36,8 @@ section {
     width: fit-content;
     margin: auto;
     text-align: center;
-    box-shadow: 0 1px 8px gray;
+    box-shadow: 0 0px 10px gray;
+    border-radius: 3px;
 }
 
 img {
