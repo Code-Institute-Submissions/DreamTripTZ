@@ -57,6 +57,18 @@ function reveal(event) {
     }
 }
 
+function search() {
+    let destinations = document.querySelectorAll(".destination");
+    destinations.forEach(destination => {
+        if (destination.innerText.includes(input.value)) {
+            destination.classList.remove("hide");
+        }
+        if (input.value == "") {
+            destination.classList.add("hide");
+        }
+    });
+}
+
 function generateButtons(value1, value2, value3) {
     choices.innerHTML = '';
 
