@@ -33,7 +33,6 @@ header {
 }
 
 section {
-    width: fit-content;
     margin: auto;
     text-align: center;
     box-shadow: 0 0px 10px gray;
@@ -41,7 +40,7 @@ section {
 }
 
 img {
-    max-width: 100%;
+    max-width: 90%; 
     border-radius: 0.5rem;
     margin: 5px 0;
     max-height: 50vh;
