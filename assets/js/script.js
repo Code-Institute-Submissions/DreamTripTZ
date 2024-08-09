@@ -6,6 +6,10 @@ const startButton = document.getElementById('start-button');
 const paragraph = document.getElementById('paragraph');
 const choices = document.getElementById('choices');
 const homeButton = document.getElementById('home'); 
+const quizButton = document.getElementById('quiz-button');
+const exploreButton = document.getElementById('explore-button');
+const landing = document.getElementById('landing');
+const quizContainer = document.getElementById('quiz-container');
 
 let userInput = [];
 let selectedChoice1, selectedChoice2, selectedChoice3;
@@ -14,7 +18,12 @@ let selectedChoice1, selectedChoice2, selectedChoice3;
 function init() {
     startButton.addEventListener('click', start);
     homeButton.addEventListener('click', home);
+    quizButton.addEventListener('click', reveal)
+    // https://www.w3schools.com/jsref/prop_style_cursor.asp
     homeButton.style.cursor = 'pointer';
+    exploreButton.style.cursor = 'pointer';
+    quizButton.style.cursor = 'pointer';
+
 }
 
 function start() {
@@ -30,6 +39,11 @@ function start() {
 function home() {
     window.location.href = "";
 } 
+
+function reveal() {
+    landing.classList.add('hide');
+    quizContainer.classList.remove('hide');
+}
 
 function generateButtons(value1, value2, value3) {
     choices.innerHTML = '';
