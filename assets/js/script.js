@@ -5,11 +5,13 @@ const img = document.getElementById('img');
 const startButton = document.getElementById('start-button');
 const paragraph = document.getElementById('paragraph');
 const choices = document.getElementById('choices');
-const homeButton = document.getElementById('home'); 
+const homeButton = document.getElementById('home');
 const quizButton = document.getElementById('quiz-button');
 const exploreButton = document.getElementById('explore-button');
 const landing = document.getElementById('landing');
 const quizContainer = document.getElementById('quiz-container');
+const filterContainer = document.getElementById('filter-container');
+const input = document.getElementById("search_here");
 
 let userInput = [];
 let selectedChoice1, selectedChoice2, selectedChoice3;
@@ -18,7 +20,9 @@ let selectedChoice1, selectedChoice2, selectedChoice3;
 function init() {
     startButton.addEventListener('click', start);
     homeButton.addEventListener('click', home);
-    quizButton.addEventListener('click', reveal)
+    quizButton.addEventListener('click', reveal);
+    exploreButton.addEventListener('click', reveal);
+    input.addEventListener("keyup", search);
     // https://www.w3schools.com/jsref/prop_style_cursor.asp
     homeButton.style.cursor = 'pointer';
     exploreButton.style.cursor = 'pointer';
@@ -40,9 +44,17 @@ function home() {
     window.location.href = "";
 } 
 
-function reveal() {
-    landing.classList.add('hide');
-    quizContainer.classList.remove('hide');
+function reveal(event) {
+    const elementId = event.target.id;
+
+    switch (elementId) {
+        case 'quiz-button':
+            landing.classList.add('hide');
+            quizContainer.classList.remove('hide');
+        case 'explore-button':
+            landing.classList.add('hide');
+            filterContainer.classList.remove('hide');
+    }
 }
 
 function generateButtons(value1, value2, value3) {
@@ -106,7 +118,7 @@ function getNewButtons(event) {
 
 function getResult(value1, value2, value3) {
     const finalChoice = quizData[value1].options[value2].options[value3]
-    
+
     paragraph.innerHTML = finalChoice.answer;
 
     choices.innerHTML = `<p>${finalChoice.destination}</p>`;
