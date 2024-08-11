@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 /* Base Styles */
+* {
+    margin: 0;
+}
+
 body {
     background-color: #ffffee;
     font-family: 'Lora';
@@ -19,9 +23,17 @@ p {
 
 /* Layout and Containers */
 header {
-    margin: 0 auto;
+    background-color: white;
+    height: 140px;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    font-style: italic;
+    margin: 5px;
     min-height: 120px;
-    width: 300px;
+    width: 150px;
     color: white;
     box-shadow: 0 0px 8px gray;
     border-radius: 8px;
@@ -30,6 +42,27 @@ header {
         linear-gradient(to right bottom,
             #10631f 38%, #8d750b 0, #8d750b 42%, #000 0,
             #000 58%, #6b5909 0, #8d750b 62%, #006185 0);
+}
+
+nav {
+    position: absolute;
+    right: 4%;
+    top: 60px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
 section {
