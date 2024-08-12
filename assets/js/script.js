@@ -57,11 +57,16 @@ function reveal(event) {
 
 function search() {
     let destinations = document.querySelectorAll(".destination");
+    const inputValue = input.value.trim().toLowerCase();
+
     destinations.forEach(destination => {
-        if (destination.innerText.includes(input.value)) {
+        const text = destination.innerText.toLowerCase();
+
+        if (text.includes(inputValue)) {
             destination.classList.remove("hide");
-        }
-        if (input.value == "") {
+        } else if (inputValue === "") {
+            destination.classList.add("hide");
+        } else {
             destination.classList.add("hide");
         }
     });
