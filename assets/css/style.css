@@ -47,6 +47,7 @@ section {
 #search_here {
     margin: 1rem 0;
     width: 50%;
+    max-width: 300px;
 }
 
 /* Logo */
