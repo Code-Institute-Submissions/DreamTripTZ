@@ -17,6 +17,7 @@ const input = document.getElementById("search_here");
 const inputZanzibar = document.getElementById('zanzibar');
 const inputArusha = document.getElementById('arusha');
 const inputSerengeti = document.getElementById('serengeti');
+const AllOptions = document.getElementById('all-options');
 
 
 let userInput = [];
@@ -36,6 +37,7 @@ function init() {
     inputSerengeti.addEventListener('click', insertValue);
     inputArusha.addEventListener('click', insertValue);
     inputZanzibar.addEventListener('click', insertValue);
+    AllOptions.addEventListener('click', insertValue);
     // https://www.w3schools.com/jsref/prop_style_cursor.asp
     exploreButton.style.cursor = 'pointer';
     quizButton.style.cursor = 'pointer';
@@ -106,6 +108,9 @@ function insertValue(event) {
             break;
         case 'serengeti':
             input.value = 'serengeti';
+            break;
+        case 'all-options':
+            input.value = '';
             break;
     }
     // Simulated spacebar to trigger 'keyup' event : by www.perplexity.ai
