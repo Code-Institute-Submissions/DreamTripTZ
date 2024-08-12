@@ -1,5 +1,3 @@
-import quizData from './quizData.js';
-
 // Variables
 const img = document.getElementById('img');
 const startButton = document.getElementById('start-button');
@@ -24,7 +22,6 @@ function init() {
     exploreButton.addEventListener('click', reveal);
     input.addEventListener("keyup", search);
     // https://www.w3schools.com/jsref/prop_style_cursor.asp
-    homeButton.style.cursor = 'pointer';
     exploreButton.style.cursor = 'pointer';
     quizButton.style.cursor = 'pointer';
 
@@ -51,6 +48,7 @@ function reveal(event) {
         case 'quiz-button':
             landing.classList.add('hide');
             quizContainer.classList.remove('hide');
+            break;
         case 'explore-button':
             landing.classList.add('hide');
             filterContainer.classList.remove('hide');

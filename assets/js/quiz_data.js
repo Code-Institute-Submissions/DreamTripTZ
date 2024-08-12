@@ -210,5 +210,3 @@ const quizData = {
         image: { alt: 'Wood sculpture on shelf', src: 'assets/images/wood-sculpture.jpg' }
     }
 };
-
-export default quizData;    
