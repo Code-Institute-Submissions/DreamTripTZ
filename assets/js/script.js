@@ -3,7 +3,7 @@ const img = document.getElementById('img');
 const startButton = document.getElementById('start-button');
 const paragraph = document.getElementById('paragraph');
 const choices = document.getElementById('choices');
-const homeButton = document.getElementById('home');
+const logo = document.getElementById('logo');
 const quizButton = document.getElementById('quiz-button');
 const exploreButton = document.getElementById('explore-button');
 const landing = document.getElementById('landing');
@@ -17,7 +17,7 @@ let selectedChoice1, selectedChoice2, selectedChoice3;
 // Methods
 function init() {
     startButton.addEventListener('click', start);
-    homeButton.addEventListener('click', home);
+    logo.addEventListener('click', home);
     quizButton.addEventListener('click', reveal);
     exploreButton.addEventListener('click', reveal);
     input.addEventListener("keyup", search);
