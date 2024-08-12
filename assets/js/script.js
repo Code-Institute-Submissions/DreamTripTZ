@@ -14,6 +14,9 @@ const landing = document.getElementById('landing');
 const quizContainer = document.getElementById('quiz-container');
 const filterContainer = document.getElementById('filter-container');
 const input = document.getElementById("search_here");
+const inputZanzibar = document.getElementById('zanzibar');
+const inputArusha = document.getElementById('arusha');
+const inputSerengeti = document.getElementById('serengeti');
 
 
 let userInput = [];
@@ -30,6 +33,9 @@ function init() {
     filterBtReserved.addEventListener('click', reveal);
     filterMenuBtReserved.addEventListener('click', reveal);
     input.addEventListener("keyup", search);
+    inputSerengeti.addEventListener('click', insertValue);
+    inputArusha.addEventListener('click', insertValue);
+    inputZanzibar.addEventListener('click', insertValue);
     // https://www.w3schools.com/jsref/prop_style_cursor.asp
     exploreButton.style.cursor = 'pointer';
     quizButton.style.cursor = 'pointer';
@@ -86,6 +92,24 @@ function search() {
             destination.classList.add("hide");
         }
     });
+}
+
+function insertValue(event) {
+    const elementId = event.target.id;
+
+    switch (elementId) {
+        case 'arusha':
+            input.value = 'arusha';
+            break;
+        case 'zanzibar':
+            input.value = 'zanzibar';
+            break;
+        case 'serengeti':
+            input.value = 'serengeti';
+            break;
+    }
+    // Simulated spacebar to trigger 'keyup' event : by www.perplexity.ai
+    input.dispatchEvent(new KeyboardEvent('keyup', { 'keyCode': 32, 'which': 32 }));
 }
 
 function generateButtons(value1, value2, value3) {
