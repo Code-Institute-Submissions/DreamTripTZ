@@ -23,12 +23,20 @@ p {
 
 /* Layout and Containers */
 header {
-    background-color: white;
     height: 140px;
     position: relative;
 }
 
+section {
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0px 10px gray;
+    border-radius: 3px;
+}
+
+/* Logo */
 #logo {
+    cursor: pointer;
     position: absolute;
     font-style: italic;
     margin: 5px;
@@ -44,41 +52,78 @@ header {
             #000 58%, #6b5909 0, #8d750b 62%, #006185 0);
 }
 
-nav {
+/* Menu */
+#menu {
+    display: none;
     position: absolute;
     right: 4%;
-    top: 60px;
-}
-
-ul {
-    display: flex;
+    top: 45px;
     justify-content: space-between;
     width: 45vw;
 }
 
-nav li {
+/* Dropdown */
+#dropdown-toggler input {
+    position: absolute;
+    right: 70px;
+    top: 60px;
+}
+
+#label-toggler {
+    position: absolute;
+    right: 10%;
+    top: 40px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffee;
+    min-width: 121px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 2%;
+    top: 125px;
+    padding: 1rem;
+}
+
+.dropdown-menu li {
+    display: inline;
+}
+
+.dropdown:checked + .dropdown-menu {
+    display: block;
+}
+
+/* List Styles */
+li {
     list-style-type: none;
 }
 
-nav a {
+li a {
     text-decoration: none;
     color: black;
+    display: block;
+    padding: 20px;
 }
 
-section {
-    margin: auto;
-    text-align: center;
-    box-shadow: 0 0px 10px gray;
-    border-radius: 3px;
+/* Hover Effects */
+a:hover,
+#label-toggler:hover {
+    background-color: rgb(202, 202, 202);
+    transition: background-color 0.3s ease-in-out;
 }
 
+/* Images */
 img {
-    max-width: 90%; 
+    max-width: 90%;
     border-radius: 0.5rem;
     margin: 5px 0;
     max-height: 50vh;
 }
 
+/* Buttons */
 button {
     margin: 1%;
     padding: 1rem;
@@ -91,8 +136,18 @@ button {
     section {
         max-width: 70%;
     }
+
+    #menu {
+        display: flex;
+    }
+
+    #dropdown-toggler,
+    #label-toggler {
+        display: none;
+    }
 }
 
+/* Utility Classes */
 .hide {
     display: none;
 }
