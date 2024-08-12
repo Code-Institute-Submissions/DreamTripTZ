@@ -18,20 +18,19 @@ h2 {
 }
 
 p {
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 /* Layout and Containers */
 header {
     height: 140px;
     position: relative;
+    box-shadow: 0 0px 4px black;
 }
 
 section {
-    margin: auto;
+    margin-top: 1rem;
     text-align: center;
-    box-shadow: 0 0px 10px gray;
-    border-radius: 3px;
 }
 
 /* Logo */
@@ -133,10 +132,6 @@ button {
 
 /* Media Queries */
 @media (min-width: 768px) {
-    section {
-        max-width: 70%;
-    }
-
     #menu {
         display: flex;
     }
