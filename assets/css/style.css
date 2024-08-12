@@ -17,6 +17,10 @@ h2 {
     text-align: center;
 }
 
+h4 {
+    margin: 1rem;
+}
+
 p {
     padding: 1rem;
 }
