@@ -18,7 +18,7 @@ const inputZanzibar = document.getElementById('zanzibar');
 const inputArusha = document.getElementById('arusha');
 const inputSerengeti = document.getElementById('serengeti');
 const AllOptions = document.getElementById('all-options');
-
+const goUpButton = document.getElementById('up-button');
 
 let userInput = [];
 let selectedChoice1, selectedChoice2, selectedChoice3;
@@ -38,6 +38,7 @@ function init() {
     inputArusha.addEventListener('click', insertValue);
     inputZanzibar.addEventListener('click', insertValue);
     AllOptions.addEventListener('click', insertValue);
+    goUpButton.addEventListener('click', goUp);
     // https://www.w3schools.com/jsref/prop_style_cursor.asp
     exploreButton.style.cursor = 'pointer';
     quizButton.style.cursor = 'pointer';
@@ -117,6 +118,18 @@ function insertValue(event) {
     input.dispatchEvent(new KeyboardEvent('keyup', { 'keyCode': 32, 'which': 32 }));
 }
 
+function scrollFunction() {
+    if (window.scrollY > 1000) {
+        goUpButton.classList.remove('hide');
+    } else {
+        goUpButton.classList.add('hide');
+    }
+}
+
+function goUp() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 function generateButtons(value1, value2, value3) {
     choices.innerHTML = '';
 
@@ -190,4 +203,5 @@ function getResult(value1, value2, value3) {
 }
 
 // Inits &  Event Listeners
-init();     
+init();
+window.onscroll = scrollFunction; 
