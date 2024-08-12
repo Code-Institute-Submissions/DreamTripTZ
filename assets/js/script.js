@@ -5,11 +5,16 @@ const paragraph = document.getElementById('paragraph');
 const choices = document.getElementById('choices');
 const logo = document.getElementById('logo');
 const quizButton = document.getElementById('quiz-button');
+const quizBtReserved = document.getElementById('quiz-bt');
+const quizMenuBtReserverd = document.getElementById('quizMenu-bt');
 const exploreButton = document.getElementById('explore-button');
+const filterBtReserved = document.getElementById('filter-bt');
+const filterMenuBtReserved = document.getElementById('filterMenu-bt');
 const landing = document.getElementById('landing');
 const quizContainer = document.getElementById('quiz-container');
 const filterContainer = document.getElementById('filter-container');
 const input = document.getElementById("search_here");
+
 
 let userInput = [];
 let selectedChoice1, selectedChoice2, selectedChoice3;
@@ -19,7 +24,11 @@ function init() {
     startButton.addEventListener('click', start);
     logo.addEventListener('click', home);
     quizButton.addEventListener('click', reveal);
+    quizBtReserved.addEventListener('click', reveal);
+    quizMenuBtReserverd.addEventListener('click', reveal);
     exploreButton.addEventListener('click', reveal);
+    filterBtReserved.addEventListener('click', reveal);
+    filterMenuBtReserved.addEventListener('click', reveal);
     input.addEventListener("keyup", search);
     // https://www.w3schools.com/jsref/prop_style_cursor.asp
     exploreButton.style.cursor = 'pointer';
@@ -42,15 +51,22 @@ function home() {
 } 
 
 function reveal(event) {
+    event.preventDefault();
     const elementId = event.target.id;
 
     switch (elementId) {
         case 'quiz-button':
+        case 'quiz-bt':
+        case 'quizMenu-bt':
             landing.classList.add('hide');
+            filterContainer.classList.add('hide');
             quizContainer.classList.remove('hide');
             break;
         case 'explore-button':
+        case 'filter-bt':
+        case 'filterMenu-bt':
             landing.classList.add('hide');
+            quizContainer.classList.add('hide');
             filterContainer.classList.remove('hide');
     }
 }
