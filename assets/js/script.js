@@ -15,10 +15,12 @@ const quizContainer = document.getElementById('quiz-container');
 const filterContainer = document.getElementById('filter-container');
 const input = document.getElementById("search_here");
 const inputZanzibar = document.getElementById('zanzibar');
-const inputArusha = document.getElementById('arusha');
 const inputSerengeti = document.getElementById('serengeti');
 const AllOptions = document.getElementById('all-options');
 const goUpButton = document.getElementById('up-button');
+const inputRelaxation = document.getElementById('relaxation');
+const inputEducation = document.getElementById('education');
+const inputAdventure = document.getElementById('adventure');
 
 let userInput = [];
 let selectedChoice1, selectedChoice2, selectedChoice3;
@@ -35,7 +37,9 @@ function init() {
     filterMenuBtReserved.addEventListener('click', reveal);
     input.addEventListener("keyup", search);
     inputSerengeti.addEventListener('click', insertValue);
-    inputArusha.addEventListener('click', insertValue);
+    inputRelaxation.addEventListener('click', insertValue);
+    inputEducation.addEventListener('click', insertValue);
+    inputAdventure.addEventListener('click', insertValue);
     inputZanzibar.addEventListener('click', insertValue);
     AllOptions.addEventListener('click', insertValue);
     goUpButton.addEventListener('click', goUp);
@@ -101,8 +105,14 @@ function insertValue(event) {
     const elementId = event.target.id;
 
     switch (elementId) {
-        case 'arusha':
-            input.value = 'arusha';
+        case 'relaxation':
+            input.value = 'relaxation';
+            break;
+        case 'education':
+            input.value = 'education';
+            break;
+        case 'adventure':
+            input.value = 'adventure';
             break;
         case 'zanzibar':
             input.value = 'zanzibar';
