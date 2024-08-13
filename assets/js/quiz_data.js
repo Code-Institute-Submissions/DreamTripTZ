@@ -10,18 +10,18 @@ const quizData = {
                 options: {
                     traditional: {
                         answer: "Here's your ideal spa destination:",
-                        destination: 'Maji, Maji Spa Ras Kutani',
-                        link: ''
+                        destination: 'Ras Kutani',
+                        link: 'https://www.exploretanzania.nl/en/destinations/ras-kutani/'
                     },
                     wellness: {
                         answer: "Here's your ideal spa destination:",
                         destination: 'One Nature Nyaruswiga in Serengeti',
-                        link: ''
+                        link: 'https://onenaturehotels.com/nyaruswiga/'
                     },
                     beauty: {
                         answer: "Here's your ideal spa destination:",
                         destination: 'The Spa at The Residence Zanzibar',
-                        link: ''
+                        link: 'https://www.cenizaro.com/theresidence/zanzibar/spa-wellness/spa-programmes'
                     }
                 },
                 image: { alt: 'A close-up of an oil burner with a lit candle', src: 'assets/images/oil-burner.jpg' }
@@ -32,17 +32,17 @@ const quizData = {
                     warm: {
                         answer: "Here's your ideal beach destination:",
                         destination: 'Nungwi Beach, Zanzibar',
-                        link: ''
+                        link: 'https://www.zanzibar.com/holidays/best-beaches-in-zanzibar/nungwi-beach/'
                     },
                     hot: {
                         answer: "Here's your ideal beach destination:",
-                        destination: 'Ras Kutani, south of Dar es Salaam',
-                        link: ''
+                        destination: 'Ras Kutani',
+                        link: 'https://www.exploretanzania.nl/en/destinations/ras-kutani/'
                     },
                     mild: {
                         answer: "Here's your ideal beach destination:",
                         destination: 'Mafia Island Marine Park',
-                        link: ''
+                        link: 'https://www.mafiaisland.com/'
                     }
                 },
                 image: { alt: 'Aerial view of Zanzibar Beach', src: 'assets/images/zanzibar-beach.jpg' }
@@ -53,17 +53,17 @@ const quizData = {
                     walks: {
                         answer: "Here's your ideal mountain retreat:",
                         destination: 'Ngorongoro Crater Lodge (crater rim walks)',
-                        link: ''
+                        link: 'https://www.andbeyond.com/magazine/explore-the-crater-by-foot/'
                     },
                     visits: {
                         answer: "Here's your ideal mountain retreat:",
                         destination: "Arusha Coffee Lodge (nearby Ng'ireshi village)",
-                        link: ''
+                        link: 'https://www.elewanacollection.com/index.php/arusha-coffee-lodge/at-a-glance'
                     },
                     relax: {
                         answer: "Here's your ideal mountain retreat:",
                         destination: "Gibb's Farm, Karatu (Ngorongoro Highlands)",
-                        link: ''
+                        link: 'https://www.gibbsfarm.com/'
                     }
                 },
                 image: { alt: 'A panoramic mountain landscape', src: 'assets/images/green-mountains.jpg' }
@@ -80,17 +80,17 @@ const quizData = {
                     guides: {
                         answer: "Here's your ideal mild adventure destination:",
                         destination: 'Guided safari in Tarangire National Park',
-                        link: ''
+                        link: 'https://www.tanzaniaodyssey.com/blog/cadogan-guide-to-tanzanias-national-parks/'
                     },
                     tours: {
                         answer: "Here's your ideal mild adventure destination:",
                         destination: 'Cultural tour to Maasai villages in Ngorongoro Conservation Area',
-                        link: ''
+                        link: 'https://www.ngorongorocratertanzania.org/ngorongoro-maasai-boma-cultural-tour/'
                     },
                     cultures: {
                         answer: "Here's your ideal mild adventure destination:",
                         destination: 'Coffee plantation experience near Moshi',
-                        link: ''
+                        link: 'https://www.budget-safari-tanzania.com/tour/9-visit-a-kilimanjaro-coffee-plantation-half-day-excursion.html'
                     }
                 },
                 image: { alt: 'Capture of a giraffe behind bush', src: 'assets/images/giraffe-behind-bush.jpg' }
@@ -101,17 +101,17 @@ const quizData = {
                     water: {
                         answer: "Here's your ideal moderate adventure destination:",
                         destination: 'Snorkeling and diving in Zanzibar',
-                        link: ''
+                        link: 'https://zanzibaroneocean.com/snorkeling/'
                     },
                     land: {
                         answer: "Here's your ideal moderate adventure destination:",
                         destination: 'Horseback riding safaris in the Serengeti',
-                        link: ''
+                        link: 'https://www.equitours.com/horseback-riding/serengeti-safari/'
                     },
                     both: {
                         answer: "Here's your ideal moderate adventure destination:",
                         destination: 'Chemka Hot Springs swimming and exploration',
-                        link: ''
+                        link: 'https://www.kilimanjaroadventures.net/tour/kikuletwa-hot-springs-chemka-natural-swimming-pool/'
                     }
                 },
                 image: { alt: 'Camping tent in the jungle', src: 'assets/images/camping-jungle.jpg' }
@@ -122,7 +122,7 @@ const quizData = {
                     climbing: {
                         answer: "Here's your ideal intense adventure destination:",
                         destination: 'Mount Kilimanjaro climb',
-                        link: ''
+                        link: 'https://www.adventurealternative.com/climb-mount-kilimanjaro/'
                     },
                     rafting: {
                         answer: "Here's your ideal intense adventure destination:",
@@ -132,7 +132,7 @@ const quizData = {
                     wilderness: {
                         answer: "Here's your ideal intense adventure destination:",
                         destination: 'Wilderness expedition in Ruaha National Park',
-                        link: ''
+                        link: 'https://acrosswilderness.com/destinations-tz-ruaha-national-park.html'
                     }
                 },
                 image: { alt: 'View of Mount Kilimanjaro', src: 'assets/images/kilimanjaro.jpg' }
@@ -149,17 +149,17 @@ const quizData = {
                     archaeology: {
                         answer: "Here's your ideal history education destination:",
                         destination: 'Oldupai Gorge (Cradle of Humankind)',
-                        link: ''
+                        link: 'https://www.loyaltoursandsafaris.com/olduvai-gorge-and-laetoli-tours/'
                     },
                     indigenous: {
                         answer: "Here's your ideal history education destination:",
                         destination: 'Lake Eyasi (Hadzabe and Datoga tribes)',
-                        link: ''
+                        link: 'https://www.safarisafricaunited.com/english/activities-during-safari/hadzabe-and-datoga-tribes-at-lake-eyasi/'
                     },
                     colonial: {
                         answer: "Here's your ideal history education destination:",
                         destination: 'Stone Town, Zanzibar',
-                        link: ''
+                        link: 'https://www.viator.com/tours/Zanzibar/Stone-Town-Tour/d5590-34358P3?dd_referrer=https%3A%2F%2Fwww.perplexity.ai%2F'
                     }
                 },
                 image: { alt: 'Stone Town Zanzibar', src: 'assets/images/stone-town.jpg' }
@@ -170,17 +170,17 @@ const quizData = {
                     wildlife: {
                         answer: "Here's your ideal scientific education destination:",
                         destination: 'Serengeti National Park research center',
-                        link: ''
+                        link: 'https://www.tawiri.or.tz/serengeti-center/'
                     },
                     farming: {
                         answer: "Here's your ideal scientific education destination:",
                         destination: 'Mulala village tour (coffee and banana plantations)',
-                        link: ''
+                        link: 'https://vaolo.com/en/experiences/mulala-village-walking-tour-agape-mulala-cte/'
                     },
                     biology: {
                         answer: "Here's your ideal scientific education destination:",
                         destination: 'Udzungwa Mountains National Park (biodiversity hotspot)',
-                        link: ''
+                        link: 'https://www.tanzaniaparks.go.tz/national_parks/udzungwa-mountains-national-park'
                     }
                 },
                 image: { alt: 'School books on a shelf', src: 'assets/images/school-books.jpg' }
@@ -191,17 +191,17 @@ const quizData = {
                     visual: {
                         answer: "Here's your ideal arts education destination:",
                         destination: 'Tingatinga painting workshops in Dar es Salaam',
-                        link: ''
+                        link: 'https://www.booking.com/attractions/tz/prwiaaa13gbf-painting-workshop-to-learn-tinga-tinga-techniques.ca.html'
                     },
                     performance: {
                         answer: "Here's your ideal arts education destination:",
                         destination: 'Traditional dance performances in Bagamoyo',
-                        link: ''
+                        link: 'https://www.nature-reserves.go.tz/index.php/destinations/activity/80/41'
                     },
                     literature: {
                         answer: "Here's your ideal arts education destination:",
                         destination: 'Swahili poetry and storytelling sessions in Zanzibar',
-                        link: ''
+                        link: 'http://zanzibarswahiliblog.blogspot.com/2012/09/jahazi-swahili-poetry-book-about.html'
                     }
                 },
                 image: { alt: 'Stacks of large spools of twine and rope', src: 'assets/images/spools.jpg' }

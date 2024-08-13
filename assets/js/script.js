@@ -207,7 +207,7 @@ function getResult(value1, value2, value3) {
 
     paragraph.innerHTML = finalChoice.answer;
 
-    choices.innerHTML = `<p>${finalChoice.destination}</p>`;
+    choices.innerHTML = `<p><a href="${finalChoice.link}" target="_blank">${finalChoice.destination}</a></p>`;
 
     // Restart button
     userInput = [];
