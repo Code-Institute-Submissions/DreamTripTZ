@@ -37,6 +37,13 @@ section {
     text-align: center;
 }
 
+.flex-container {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .destination {
     margin: 1rem;
     border: 1px;
@@ -45,7 +52,8 @@ section {
     box-shadow: 0 0px 7px #000;
     padding: 1rem;
     border-radius: 1rem;
-
+    flex-basis: 50%;    
+    max-width: 40%;
 }
 
 #search_here {
@@ -112,7 +120,7 @@ section {
     display: inline;
 }
 
-.dropdown:checked + .dropdown-menu {
+.dropdown:checked+.dropdown-menu {
     display: block;
 }
 
