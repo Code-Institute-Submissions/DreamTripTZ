@@ -151,6 +151,14 @@ button {
     min-width: 175px;
 }
 
+#up-button {
+    position: fixed;
+    bottom: 0%;
+    right: 2%;
+    background: seagreen;
+    color: white;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
     #menu {
