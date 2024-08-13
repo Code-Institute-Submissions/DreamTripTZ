@@ -13,6 +13,7 @@ const filterMenuBtReserved = document.getElementById('filterMenu-bt');
 const landing = document.getElementById('landing');
 const quizContainer = document.getElementById('quiz-container');
 const filterContainer = document.getElementById('filter-container');
+const goToFilter = document.getElementById('show-filter');
 const input = document.getElementById("search_here");
 const inputZanzibar = document.getElementById('zanzibar');
 const inputSerengeti = document.getElementById('serengeti');
@@ -35,6 +36,7 @@ function init() {
     exploreButton.addEventListener('click', reveal);
     filterBtReserved.addEventListener('click', reveal);
     filterMenuBtReserved.addEventListener('click', reveal);
+    goToFilter.addEventListener('click', reveal);
     input.addEventListener("keyup", search);
     inputSerengeti.addEventListener('click', insertValue);
     inputRelaxation.addEventListener('click', insertValue);
@@ -78,6 +80,7 @@ function reveal(event) {
         case 'explore-button':
         case 'filter-bt':
         case 'filterMenu-bt':
+        case 'show-filter':
             landing.classList.add('hide');
             quizContainer.classList.add('hide');
             filterContainer.classList.remove('hide');
@@ -210,6 +213,9 @@ function getResult(value1, value2, value3) {
     userInput = [];
     startButton.style.display = '';
     startButton.innerHTML = "Test again!";
+
+    // Go to Filter button
+    goToFilter.classList.remove('hide');
 }
 
 // Inits &  Event Listeners
