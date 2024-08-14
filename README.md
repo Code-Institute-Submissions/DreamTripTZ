@@ -31,3 +31,5 @@ After completing the quiz, you can filter through all the curated results. This 
 DreamTripTZ aims to ignite the realization that Tanzania is the ultimate dream destination for tourism. Whether you're seeking a relaxing getaway, an educational journey, or an adventurous escapade, our site is designed to make you feel like you've discovered a hidden gem.
 
 So, why wait? Take the quiz today and find out why Tanzania is the dream destination you've been missing. Let DreamTripTZ guide you to your next unforgettable vacation.
+
+![screenshot](documentation/mockup.png)
