@@ -139,5 +139,6 @@ Finally, the intuitive "go up" option, which appears on the left side (convenien
 - **Custom made Error page** 
 
 A valuable feature for any website is a custom error page that appears when users enter an incorrect URL. This page features a serene image of a lone boat on the open Indian Ocean, evoking a sense of solitude and contemplation, as if the user had become lost.
+It includes a hyperlink allowing users to easily return to the index.html page.
 
 ![screenshot](documentation/features/error-page.png)
