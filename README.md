@@ -128,3 +128,9 @@ The logo also functions as a home button, offering users a quick way to return t
 
 ![screenshot](documentation/features/home-button.png)
 
+- **The Up-Button** 
+
+Finally, the intuitive "go up" option, which appears on the left side (convenient for the majority of right-handed users), allows for easy navigation when browsing the filter section. This design choice enhances user-friendliness.
+
+![screenshot](documentation/features/go-up.png)
+
