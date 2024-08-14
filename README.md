@@ -36,3 +36,95 @@ So, why wait? Take the quiz today and find out why Tanzania is the dream destina
 
 source: [amiresponsive](https://ui.dev/amiresponsive?url=https://d0bledore.github.io/DreamTripTZ)
 
+## UX 
+
+### Color Scheme 
+
+#### Primary Colors
+
+- **Background Color**: The predominant background color for the body and dropdown menu is #ffffee, a soft, light beige. This color provides a neutral and calming backdrop, making it easy on the eyes and allowing other elements to stand out.
+    
+- **Text Color**: The primary text color is black (#000), which provides a strong contrast against the light beige background, ensuring readability and clarity.
+
+#### Accent Colors
+
+- **Logo Background**: The logo showcases a complex linear gradient that combines multiple colors reminiscent of the Tanzanian flag. This immediately highlights the site's theme.
+
+- **Button Color**: The "Up Button" uses seagreen as its background color, paired with white text. Seagreen is a calming and refreshing color, often associated with nature and tranquility.
+
+#### Footer and Links
+
+- **Footer Background**: The footer has a dark, nearly black background (rgba(0, 0, 0, 0.95)), which provides a strong base and helps anchor the design visually. The text and links in the footer are white, offering high contrast for readability.
+
+- **Link Hover Effects**: Links change to rgb(0, 110, 255) on hover, a bright blue that stands out against the dark footer background, indicating interactivity. This color is commonly associated with hyperlinks and helps guide user interaction.
+
+#### Hover Effects 
+
+- **General Hover Effects**: For elements like buttons and the #label-toggler (the label element which opens a dropdown menu), the hover background color is rgb(202, 202, 202), a light gray. This subtle change provides visual feedback without being too distracting, maintaining the overall elegance of the design.
+
+#### Overall Design Aesthetic
+
+The overall color scheme is balanced and professional, using neutral tones as a foundation while incorporating green and blue accents to add depth and interest. This combination can evoke feelings of calmness, reliability, and sophistication, making it suitable for a wide range of applications, from corporate websites to personal blogs. The strategic hover effects enhances user engagement and ensures that important elements are easily noticeable.
+
+### Typography 
+
+- **Google Font "Lora"**: The font "Lora" is imported from Google Fonts and applied to the entire document through the body selector. This serif font is known for its readability and classic appearance, suitable for both body text and headings.
+
+## Features 
+
+### Existing Features
+
+#### Main Features 
+
+- **Quiz to Your Dream Trip** 
+
+The primary goal of the site is to offer a quiz that guides users to their dream trip in Tanzania. Users can choose from three ideal trip scenarios: Education, Relaxation, or Adventure. Based on their selection, the quiz will further refine the options to provide a personalized match for the user.
+
+![screenshot](documentation/features/quiz.png)
+
+- **Resources to each Result** 
+
+The essence of this concept is to demonstrate the diverse tourism opportunities available in this East African nation. The highlight is the real resources provided at the end of the quiz, which direct users to an external site offering tailored tourism options. Whether it's climbing Mount Kilimanjaro, visiting Zanzibar, or exploring Swahili poetry events, the site ensures users can go beyond just taking a quiz.
+
+![screenshot](documentation/features/quiz-result.png)
+
+
+- **Results filter and filter options** 
+
+For added convenience, after completing the quiz, users have the option to visit the filter section. Here, they can view all results for each of the three ideal trip scenarios. Additionally, two popular choices—Serengeti National Park and the Island Paradise Zanzibar—are highlighted. To enhance the user experience, the site offers two handy options: "Clear Text" and "All Options," providing an easy filtering mechanism. The overall aim is to make the site as pleasant and user-friendly as possible.
+
+![screenshot](documentation/features/filter-options.png) 
+
+![screenshot](documentation/features/all-options.png)
+
+
+
+#### Navigation Features
+
+- **Call to Action Options** 
+
+The call to action options on the landing page are designed to immediately engage users, encouraging them to take the quiz and discover where their dream trip could lead them. 
+
+![screenshot](documentation/features/cta.png)
+
+
+- **Menu Navigation** 
+
+For desktop and tablet screen sizes, the menu navigation allows users to easily switch between the filter and quiz sections, ensuring a seamless browsing experience.
+
+![screenshot](documentation/features/menu-nav.png)
+
+
+- **Mobile Menu Dropdown Navigation** 
+
+On smaller screens, the mobile menu dropdown provides a toggle feature that facilitates navigation between the filter and quiz sections, maintaining ease of use on mobile devices
+
+![screenshot](documentation/features/dropdown.png)
+
+
+- **The Logo as a Home Button** 
+
+The logo also functions as a home button, offering users a quick way to return to the homepage or refresh the site if they feel lost or wish to start over. This feature enhances user experience by providing an intuitive navigation option.
+
+![screenshot](documentation/features/home-button.png)
+
