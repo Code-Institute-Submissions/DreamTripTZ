@@ -33,3 +33,6 @@ DreamTripTZ aims to ignite the realization that Tanzania is the ultimate dream d
 So, why wait? Take the quiz today and find out why Tanzania is the dream destination you've been missing. Let DreamTripTZ guide you to your next unforgettable vacation.
 
 ![screenshot](documentation/mockup.png)
+
+source: [amiresponsive](https://ui.dev/amiresponsive?url=https://d0bledore.github.io/DreamTripTZ)
+
