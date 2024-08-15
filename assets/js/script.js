@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 // Variables
 const img = document.getElementById('img');
 const startButton = document.getElementById('start-button');
@@ -17,7 +19,8 @@ const goToFilter = document.getElementById('show-filter');
 const input = document.getElementById("search_here");
 const inputZanzibar = document.getElementById('zanzibar');
 const inputSerengeti = document.getElementById('serengeti');
-const AllOptions = document.getElementById('all-options');
+const allOptions = document.getElementById('all-options');
+const resetOptions = document.getElementById('reset');
 const goUpButton = document.getElementById('up-button');
 const inputRelaxation = document.getElementById('relaxation');
 const inputEducation = document.getElementById('education');
@@ -43,7 +46,8 @@ function init() {
     inputEducation.addEventListener('click', insertValue);
     inputAdventure.addEventListener('click', insertValue);
     inputZanzibar.addEventListener('click', insertValue);
-    AllOptions.addEventListener('click', insertValue);
+    allOptions.addEventListener('click', insertValue);
+    resetOptions.addEventListener('click', insertValue);
     goUpButton.addEventListener('click', goUp);
     // https://www.w3schools.com/jsref/prop_style_cursor.asp
     exploreButton.style.cursor = 'pointer';
@@ -84,6 +88,7 @@ function reveal(event) {
             landing.classList.add('hide');
             quizContainer.classList.add('hide');
             filterContainer.classList.remove('hide');
+            break;
     }
 }
 
@@ -92,11 +97,9 @@ function search() {
     const inputValue = input.value.trim().toLowerCase();
 
     destinations.forEach(destination => {
-        const text = destination.innerText.toLowerCase();
-
-        if (text.includes(inputValue)) {
+        if (destination.classList.contains(inputValue) || inputValue.includes("all")) {
             destination.classList.remove("hide");
-        } else if (inputValue === "") {
+        } else if (inputValue.value == "") {
             destination.classList.add("hide");
         } else {
             destination.classList.add("hide");
@@ -124,11 +127,13 @@ function insertValue(event) {
             input.value = 'serengeti';
             break;
         case 'all-options':
+            input.value = 'all';
+            break;
+        default:
             input.value = '';
             break;
     }
-    // Simulated spacebar to trigger 'keyup' event : by www.perplexity.ai
-    input.dispatchEvent(new KeyboardEvent('keyup', { 'keyCode': 32, 'which': 32 }));
+    search();
 }
 
 function scrollFunction() {
