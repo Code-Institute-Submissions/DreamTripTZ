@@ -155,6 +155,7 @@ button {
     padding: 1rem;
     font-family: 'Lora';
     min-width: 175px;
+    cursor: pointer;
 }
 
 #up-button {
