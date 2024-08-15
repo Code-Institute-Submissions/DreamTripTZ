@@ -1,6 +1,7 @@
 /* jshint esversion: 11 */
 
 // Variables
+// Get references to DOM elements for later manipulation
 const img = document.getElementById('img');
 const startButton = document.getElementById('start-button');
 const paragraph = document.getElementById('paragraph');
@@ -26,11 +27,15 @@ const inputRelaxation = document.getElementById('relaxation');
 const inputEducation = document.getElementById('education');
 const inputAdventure = document.getElementById('adventure');
 
+// Array to store user input choices
 let userInput = [];
 let selectedChoice1, selectedChoice2, selectedChoice3;
 
 // Methods
+
+// Initialize event listeners
 function init() {
+    // Add event listeners to buttons and inputs
     startButton.addEventListener('click', start);
     logo.addEventListener('click', home);
     quizButton.addEventListener('click', reveal);
@@ -49,12 +54,9 @@ function init() {
     allOptions.addEventListener('click', insertValue);
     resetOptions.addEventListener('click', insertValue);
     goUpButton.addEventListener('click', goUp);
-    // https://www.w3schools.com/jsref/prop_style_cursor.asp
-    exploreButton.style.cursor = 'pointer';
-    quizButton.style.cursor = 'pointer';
-
 }
 
+// Start the quiz by changing the image, paragraph, and hiding the start button
 function start() {
     img.src = "assets/images/airplane-clouds.jpg";
     img.alt = "Airplane on sky during golden hour";
@@ -66,10 +68,12 @@ function start() {
     generateButtons();
 }
 
+// Navigate to the home page
 function home() {
     window.location.href = "";
 } 
 
+// Reveal different sections based on the clicked button
 function reveal(event) {
     event.preventDefault();
     const elementId = event.target.id;
@@ -93,6 +97,7 @@ function reveal(event) {
     }
 }
 
+// Filter destinations based on search input
 function search() {
     let destinations = document.querySelectorAll(".destination");
     const inputValue = input.value.trim().toLowerCase();
@@ -108,6 +113,7 @@ function search() {
     });
 }
 
+// Insert predefined values into the search input and trigger search function
 function insertValue(event) {
     const elementId = event.target.id;
 
@@ -137,6 +143,7 @@ function insertValue(event) {
     search();
 }
 
+// Show or hide the "Go Up" button based on scroll position
 function scrollFunction() {
     if (window.scrollY > 1000) {
         goUpButton.classList.remove('hide');
@@ -145,10 +152,12 @@ function scrollFunction() {
     }
 }
 
+// Smooth scroll to the top of the page
 function goUp() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Generate buttons based on user input and update the quiz interface
 function generateButtons(value1, value2, value3) {
     choices.innerHTML = '';
 
@@ -185,6 +194,7 @@ function generateButtons(value1, value2, value3) {
     }
 }
 
+// Handle button clicks to update user input and generate new buttons
 function getNewButtons(event) {
     event = this;
     const data = this.innerHTML;
@@ -208,6 +218,7 @@ function getNewButtons(event) {
     generateButtons(selectedChoice1, selectedChoice2, selectedChoice3)
 }
 
+// Display the final result based on user choices
 function getResult(value1, value2, value3) {
     const finalChoice = quizData[value1].options[value2].options[value3]
 
@@ -224,6 +235,7 @@ function getResult(value1, value2, value3) {
     goToFilter.classList.remove('hide');
 }
 
-// Inits &  Event Listeners
-init();
-window.onscroll = scrollFunction; 
+// Initialize the application
+init(); 
+// Add scroll event listener
+window.onscroll = scrollFunction;
