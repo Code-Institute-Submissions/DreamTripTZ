@@ -62,6 +62,7 @@ function start() {
     paragraph.innerHTML = "What's the ideal purpose for your Trip?";    
 
     startButton.style.display = 'none';
+    goToFilter.classList.add('hide');
     generateButtons();
 }
 
