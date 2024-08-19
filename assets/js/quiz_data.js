@@ -1,6 +1,9 @@
 // The Structure of this Object was created and suggested by an AI.
 // It is my Challenge to use this structure and implement it in my Quiz. 
 
+/* jshint esversion: 11 */
+
+
 const quizData = {
     relaxation: {
         question: 'What type of relaxation environment do you prefer?',
