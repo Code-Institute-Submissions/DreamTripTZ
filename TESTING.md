@@ -397,56 +397,36 @@ When in doubt, use the above method instead, and delete the table below.
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
 | repeat for all remaining pages | x | x | x | x |
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## Bugs
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+### Text Input Field Page Reset 
 
-This section is primarily used for JavaScript and Python applications,
-but feel free to use this section to document any HTML/CSS bugs you might run into.
+Initially, I used a form element in HTML to implement an easy reset button for the text input area. However, this became redundant when JavaScript was introduced.
 
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
 
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
+The bug was that, due to the form elements, hitting enter in the text input area caused the site to reset, redirecting the user back to the landing page. This was particularly frustrating for mobile users, who would press enter to exit the input box and view results. Replacing the redundant form elements with div elements resolved the issue. Now, the form does not reset because there is no form anymore.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+I tested the filtering functionality after the replacement to ensure it worked as expected. 
 
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
+### Unexpected Filtering Results 
 
-    ![screenshot](documentation/bugs/bug01.png)
+The filtering functioned similarly for all search input buttons. They were, in fact, written with the same switch statement, as shown below:
 
-    - To fix this, I _____________________.
+![screenshot](documentation/bugs/insertValue.png)
 
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
+However, for some reason, the filtering options for 'Education,' 'Relaxation,' and 'Adventure' behaved differently. When a user clicked one of these buttons twice, the output would toggle between two different results.
 
-    ![screenshot](documentation/bugs/bug02.png)
+See the table of comparison: 
 
-    - To fix this, I _____________________.
+| Button | First Click | Second Click | 
+| --- | --- | --- | 
+| Relaxation | ![screenshot](documentation/bugs/filter/relaxation-one.png) | ![screenshot](documentation/bugs/filter/relaxation-two.png) | 
+| Education | ![screenshot](documentation/bugs/filter/education-one.png) | ![screenshot](documentation/bugs/filter/education-two.png) | 
+| Adventure | ![screenshot](documentation/bugs/filter/adventure-one.png) | ![screenshot](documentation/bugs/filter/adventure-two.png) | 
 
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
 
-    ![screenshot](documentation/bugs/bug03.png)
-
-    - To fix this, I _____________________.
-
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
-
-- Python `E501 line too long` (93 > 79 characters)
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
+The reason for this behavior was unclear, even after fixing it, but it might have been related to the HTML. I previously used 'hidden' span elements with the words 'Relaxation,' 'Education,' or 'Adventure' to reveal these results with the search function. The search function initially revealed each div element with the class 'destination' that included the searched word. I later modified my HTML to remove all spans, adding classes to each destination with the corresponding name and path, and refactored the search function to reveal destinations with the included class. This resolved the issue. However, the input did not change, so theoretically, it should not have behaved as it did. Because the switch statement overrides the input text value, if the word 'Education' is included in the innerHTML of the div 'destination,' it should reveal these destinations. Clicking it again should not cause it to disappear completely, as the input value does not change. It was impossible to trace this bug with a console.log statement, so it remains a mystery.
 
 ## Unfixed Bugs
 
