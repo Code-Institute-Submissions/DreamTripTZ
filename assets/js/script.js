@@ -174,8 +174,9 @@ function generateButtons(value1, value2, value3) {
     // Dynamically updates the content of the choices and paragraph elements  
     if (userInput.length === 1) {
         for (const category in quizData[value1].options) {
-            if (quizData.hasOwnProperty(category))
+            if (quizData.hasOwnProperty(category)) {
                 choices.innerHTML += `<button>${category}</button>`;
+            }
         }
         paragraph.innerHTML = quizData[value1].question;
 
@@ -184,8 +185,9 @@ function generateButtons(value1, value2, value3) {
 
     } else if (userInput.length === 2) {
         for (const category in quizData[value1].options[value2].options) {
-            if (quizData.hasOwnProperty(category))
+            if (quizData.hasOwnProperty(category)) {
                 choices.innerHTML += `<button>${category}</button>`;
+            }
         }
         paragraph.innerHTML = quizData[value1].options[value2].question;
 
@@ -197,8 +199,9 @@ function generateButtons(value1, value2, value3) {
     }
     else {
         for (const category in quizData) {
-            if (quizData.hasOwnProperty(category))
+            if (quizData.hasOwnProperty(category)) {
                 choices.innerHTML += `<button>${category}</button>`;
+            }
         }
     }
     const buttons = document.getElementById('choices').getElementsByTagName('button');
