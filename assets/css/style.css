@@ -12,12 +12,11 @@ body {
 }
 
 /* Typography */
-h1,
-h2 {
+h1 {
     text-align: center;
 }
 
-h4 {
+h2, h4 {
     margin: 1rem;
 }
 
