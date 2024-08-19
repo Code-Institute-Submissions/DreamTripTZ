@@ -215,12 +215,12 @@ function getNewButtons(event) {
             break;
     }
 
-    generateButtons(selectedChoice1, selectedChoice2, selectedChoice3)
+    generateButtons(selectedChoice1, selectedChoice2, selectedChoice3);
 }
 
 // Display the final result based on user choices
 function getResult(value1, value2, value3) {
-    const finalChoice = quizData[value1].options[value2].options[value3]
+    const finalChoice = quizData[value1].options[value2].options[value3];
 
     paragraph.innerHTML = finalChoice.answer;
 
