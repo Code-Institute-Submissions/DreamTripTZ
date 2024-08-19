@@ -61,7 +61,7 @@ function start() {
     img.src = "assets/images/airplane-clouds.jpg";
     img.alt = "Airplane on sky during golden hour";
 
-    paragraph.innerHTML = "What's the ideal purpose for your Trip?";    
+    paragraph.innerHTML = "What's the ideal purpose for your Trip?";
 
     startButton.style.display = 'none';
     goToFilter.classList.add('hide');
@@ -71,7 +71,7 @@ function start() {
 // Navigate to the home page
 function home() {
     window.location.href = "";
-} 
+}
 
 // Reveal different sections based on the clicked button
 function reveal(event) {
@@ -102,8 +102,18 @@ function search() {
     let destinations = document.querySelectorAll(".destination");
     const inputValue = input.value.trim().toLowerCase();
 
+    // If inputValue is empty, hide all destinations
+    if (inputValue === "") {
+        destinations.forEach(destination => {
+            destination.classList.add("hide");
+        });
+        return;
+    }
+
     destinations.forEach(destination => {
-        if (destination.classList.contains(inputValue) || inputValue.includes("all")) {
+        const destinationText = destination.textContent.toLowerCase();
+
+        if (destination.classList.contains(inputValue) || inputValue.includes("all") || destinationText.includes(inputValue)) {
             destination.classList.remove("hide");
         } else if (inputValue.value == "") {
             destination.classList.add("hide");
@@ -164,8 +174,8 @@ function generateButtons(value1, value2, value3) {
     // Dynamically updates the content of the choices and paragraph elements  
     if (userInput.length === 1) {
         for (const category in quizData[value1].options) {
-            if (quizData.hasOwnProperty(category)) 
-            choices.innerHTML += `<button>${category}</button>`;
+            if (quizData.hasOwnProperty(category))
+                choices.innerHTML += `<button>${category}</button>`;
         }
         paragraph.innerHTML = quizData[value1].question;
 
@@ -174,8 +184,8 @@ function generateButtons(value1, value2, value3) {
 
     } else if (userInput.length === 2) {
         for (const category in quizData[value1].options[value2].options) {
-            if (quizData.hasOwnProperty(category)) 
-            choices.innerHTML += `<button>${category}</button>`;
+            if (quizData.hasOwnProperty(category))
+                choices.innerHTML += `<button>${category}</button>`;
         }
         paragraph.innerHTML = quizData[value1].options[value2].question;
 
@@ -187,8 +197,8 @@ function generateButtons(value1, value2, value3) {
     }
     else {
         for (const category in quizData) {
-            if (quizData.hasOwnProperty(category)) 
-            choices.innerHTML += `<button>${category}</button>`;
+            if (quizData.hasOwnProperty(category))
+                choices.innerHTML += `<button>${category}</button>`;
         }
     }
     const buttons = document.getElementById('choices').getElementsByTagName('button');
@@ -239,6 +249,6 @@ function getResult(value1, value2, value3) {
 }
 
 // Initialize the application
-init(); 
+init();
 // Add scroll event listener
 window.onscroll = scrollFunction;
