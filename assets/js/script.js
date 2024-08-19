@@ -26,6 +26,9 @@ const goUpButton = document.getElementById('up-button');
 const inputRelaxation = document.getElementById('relaxation');
 const inputEducation = document.getElementById('education');
 const inputAdventure = document.getElementById('adventure');
+let resultCount = 0;
+const resultCounter = document.getElementById("result-count");
+const searchText = document.getElementById("search-text");
 
 // Array to store user input choices
 let userInput = [];
@@ -99,14 +102,18 @@ function reveal(event) {
 
 // Filter destinations based on search input
 function search() {
+    resultCount = 0;
     let destinations = document.querySelectorAll(".destination");
     const inputValue = input.value.trim().toLowerCase();
+    searchText.innerText = `for "${inputValue}"`;
 
     // If inputValue is empty, hide all destinations
     if (inputValue === "") {
         destinations.forEach(destination => {
             destination.classList.add("hide");
         });
+        resultCounter.innerText = resultCount;
+        searchText.innerText = `${inputValue}`;
         return;
     }
 
@@ -115,12 +122,18 @@ function search() {
 
         if (destination.classList.contains(inputValue) || inputValue === 'all' || destinationText.includes(inputValue)) {
             destination.classList.remove("hide");
+            resultCount++;
+            if (inputValue === "all") {
+                searchText.innerText = "";
+            }
         } else if (inputValue.value == "") {
             destination.classList.add("hide");
+            resultCount == 0;
         } else {
             destination.classList.add("hide");
         }
     });
+    resultCounter.innerText = resultCount;
 }
 
 // Insert predefined values into the search input and trigger search function
