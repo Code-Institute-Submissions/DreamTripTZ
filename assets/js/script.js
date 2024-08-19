@@ -113,7 +113,7 @@ function search() {
     destinations.forEach(destination => {
         const destinationText = destination.textContent.toLowerCase();
 
-        if (destination.classList.contains(inputValue) || inputValue.includes === 'all' || destinationText.includes(inputValue)) {
+        if (destination.classList.contains(inputValue) || inputValue === 'all' || destinationText.includes(inputValue)) {
             destination.classList.remove("hide");
         } else if (inputValue.value == "") {
             destination.classList.add("hide");
@@ -174,9 +174,7 @@ function generateButtons(value1, value2, value3) {
     // Dynamically updates the content of the choices and paragraph elements  
     if (userInput.length === 1) {
         for (const category in quizData[value1].options) {
-            if (quizData.hasOwnProperty(category)) {
-                choices.innerHTML += `<button>${category}</button>`;
-            }
+            choices.innerHTML += `<button>${category}</button>`;
         }
         paragraph.innerHTML = quizData[value1].question;
 
@@ -185,9 +183,7 @@ function generateButtons(value1, value2, value3) {
 
     } else if (userInput.length === 2) {
         for (const category in quizData[value1].options[value2].options) {
-            if (quizData.hasOwnProperty(category)) {
-                choices.innerHTML += `<button>${category}</button>`;
-            }
+            choices.innerHTML += `<button>${category}</button>`;
         }
         paragraph.innerHTML = quizData[value1].options[value2].question;
 
@@ -199,9 +195,7 @@ function generateButtons(value1, value2, value3) {
     }
     else {
         for (const category in quizData) {
-            if (quizData.hasOwnProperty(category)) {
-                choices.innerHTML += `<button>${category}</button>`;
-            }
+            choices.innerHTML += `<button>${category}</button>`;
         }
     }
     const buttons = document.getElementById('choices').getElementsByTagName('button');
