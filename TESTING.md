@@ -173,8 +173,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| assets | quiz_data.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
-| assets | script.js | ![screenshot](documentation/validation/path-to-screenshot.png) | |
+| assets | quiz_data.js | ![screenshot](documentation/validation/quiz-data.png) | |
+| assets | script.js | ![screenshot](documentation/validation/script.png) | |
 
 ## Browser Compatibility
 
