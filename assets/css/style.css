@@ -24,6 +24,13 @@ p {
     padding: 1rem;
 }
 
+#filter-container a,
+#filter-container a:visited,
+#filter-container a:active {
+    color: seagreen;
+    font-weight: bold;
+}
+
 /* Layout and Containers */
 header {
     height: 140px;
