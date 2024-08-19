@@ -4,9 +4,84 @@
 > Return back to the [README.md](README.md) file.
 
 
-## Features to Test
+## Code Validation
 
-This section outlines the testing procedures for the key features of the project, focusing on the **Quiz** and **Filter** functionalities. The aim is to ensure these features work as intended, providing users with a seamless and engaging experience.
+### HTML
+
+I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+
+| Directory | File | Screenshot | Notes | 
+| --- | --- | --- | --- |
+|  | 404.html | ![screenshot](documentation/validation/404-page.png) | No Errors |
+|  | index.html | ![screenshot](documentation/validation/index-page.png) | No Errors |
+
+
+
+### CSS
+
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| assets/css | style.css | ![screenshot](documentation/validation/css.png) | No Error Found |
+
+### JavaScript
+
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+
+| Directory | File | Screenshot | Notes |
+| --- | --- | --- | --- |
+| assets/js | quiz_data.js | ![screenshot](documentation/validation/quiz-data.png) | No Warnings or Errors |
+| assets/js | script.js | ![screenshot](documentation/validation/script.png) | Four Warnings but they are not game breaking |
+
+## Browser Compatibility
+
+
+I tested the live/deployed version of my site on the following browsers: 
+
+- [Ungoogled Chrome](https://www.techspot.com/downloads/7181-ungoogled-chromium.html)
+- [Firefox](https://www.mozilla.org/firefox/download/)
+- [Brave](https://brave.com/download)
+- [Opera](https://www.opera.com/download)
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Browser | Landing Page | Quiz Section (with options) | Filter Section (with results) | Notes |
+| --- | --- | --- | --- | --- |
+| Ungoogled Chromium | ![screenshot](documentation/browsers/unchrome-landing.png) | ![screenshot](documentation/browsers/unchrome-quiz.png) | ![screenshot](documentation/browsers/unchrome-filter.png) | Works as expected |
+| Firefox | ![screenshot](documentation/responsiveness/landing-desktop.png) | ![screenshot](documentation/responsiveness/quiz-desktop.png) | ![screenshot](documentation/responsiveness/filter-desktop.png) | Works as expected |
+| Brave | ![screenshot](documentation/browsers/brave-landing.png) | ![screenshot](documentation/browsers/brave-quiz.png) | ![screenshot](documentation/browsers/brave-filter.png) | Works as expected |
+| Opera | ![screenshot](documentation/browsers/opera-landing.png) | ![screenshot](documentation/browsers/opera-quiz.png) | ![screenshot](documentation/browsers/opera-filter.png) | minor visual differences on buttons (as expected) |
+
+
+## Responsiveness
+
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | Landing Page | Quiz Section (with options) | Filter Section (with results) | Notes |
+| --- | --- | --- | --- | --- | 
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/landing-mobile.png) | ![screenshot](documentation/responsiveness/quiz-mobile.png) | ![screenshot](documentation/responsiveness/filter-mobile.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/landing-tablet.png) | ![screenshot](documentation/responsiveness/quiz-tablet.png) | ![screenshot](documentation/responsiveness/filter-tablet.png) | Works as expected |
+| Desktop | ![screenshot](documentation/responsiveness/landing-desktop.png) | ![screenshot](documentation/responsiveness/quiz-desktop.png) | ![screenshot](documentation/responsiveness/filter-desktop.png) | Works as expected |
+
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Mobile | Desktop | Notes |
+| --- | --- | --- | --- |
+| index.html | ![screenshot](documentation/lighthouse/index-mobile.png) | ![screenshot](documentation/lighthouse/index-desktop.png) |major performance impact due to high resource loading |
+| 404.html | ![screenshot](documentation/lighthouse/404-mobile.png) | ![screenshot](documentation/lighthouse/404-desktop.png) | major performance impact due to high resource loading  | 
+
+
+**Comment**:
+
+I am using a lot of images on one page in this project. I could change all images to formats like WebP and AVIF which provide better compression than PNG or JPEG to improve performance. 
+
+
+## Feature testing
+
+This section outlines the testing procedures for the key features of the project, focusing primarly on the **Quiz** and **Filter** functionalities. The aim is to ensure these features work as intended, providing users with a seamless and engaging experience.
 
 - **Quiz**: An interactive component that guides users through a series of questions to determine their ideal travel experience.
 - **Filter**: A feature that allows users to explore all potential travel options and refine their choices based on specific criteria.
@@ -136,151 +211,6 @@ I confirmed that the logo functions as a home button, allowing users to return t
 
 I ensure that all interactive elements and navigation features are thoroughly evaluated for functionality and user experience.
 
-
-## Code Validation
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use the space to discuss code validation for any of your own code files (where applicable).
-You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
-
-**IMPORTANT**: You must provide a screenshot for each file you validate.
-
-**PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-### HTML
-
-I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
-
-| Directory | File | Screenshot | Notes |
-| --- | --- | --- | --- |
-|  | 404.html | ![screenshot](documentation/validation/404-page.png) | |
-|  | index.html | ![screenshot](documentation/validation/index-page.png) | |
-
-### CSS
-
-I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
-
-| Directory | File | Screenshot | Notes |
-| --- | --- | --- | --- |
-| assets | style.css | ![screenshot](documentation/validation/css.png) | |
-
-### JavaScript
-
-I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
-
-| Directory | File | Screenshot | Notes |
-| --- | --- | --- | --- |
-| assets | quiz_data.js | ![screenshot](documentation/validation/quiz-data.png) | |
-| assets | script.js | ![screenshot](documentation/validation/script.png) | |
-
-## Browser Compatibility
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site on various browsers.
-
-Consider testing AT LEAST 3 different browsers, if available on your system.
-
-You DO NOT need to use all of the browsers below, just pick any 3 (minimum).
-
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
-- [Safari](https://support.apple.com/downloads/safari)
-- [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-**IMPORTANT**: You must provide screenshots of the tested browsers, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time.
-Some of these are paid services, but some are free.
-If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-Sample browser testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I've tested my deployed project on multiple browsers to check for compatibility issues.
-
-| Browser | Home | About | Contact | etc | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browsers/browser-chrome-home.png) | ![screenshot](documentation/browsers/browser-chrome-about.png) | ![screenshot](documentation/browsers/browser-chrome-contact.png) | ![screenshot](documentation/browsers/browser-chrome-etc.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browsers/browser-firefox-home.png) | ![screenshot](documentation/browsers/browser-firefox-about.png) | ![screenshot](documentation/browsers/browser-firefox-contact.png) | ![screenshot](documentation/browsers/browser-firefox-etc.png) | Works as expected |
-| Edge | ![screenshot](documentation/browsers/browser-edge-home.png) | ![screenshot](documentation/browsers/browser-edge-about.png) | ![screenshot](documentation/browsers/browser-chrome-edge.png) | ![screenshot](documentation/browsers/browser-edge-etc.png) | Works as expected |
-| Safari | ![screenshot](documentation/browsers/browser-safari-home.png) | ![screenshot](documentation/browsers/browser-safari-about.png) | ![screenshot](documentation/browsers/browser-safari-contact.png) | ![screenshot](documentation/browsers/browser-safari-etc.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browsers/browser-brave-home.png) | ![screenshot](documentation/browsers/browser-brave-about.png) | ![screenshot](documentation/browsers/browser-brave-contact.png) | ![screenshot](documentation/browsers/browser-brave-etc.png) | Works as expected |
-| Opera | ![screenshot](documentation/browsers/browser-opera-home.png) | ![screenshot](documentation/browsers/browser-opera-about.png) | ![screenshot](documentation/browsers/browser-opera-contact.png) | ![screenshot](documentation/browsers/browser-opera-etc.png) | Minor differences |
-| repeat for any other tested browsers | x | x | x | x | x |
-
-## Responsiveness
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I've tested my deployed project on multiple devices to check for responsiveness issues.
-
-| Device | Home | About | Contact | etc | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-about.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-about.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-etc.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-about.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-etc.png) | Scaling starts to have minor issues |
-| 4K Monitor | ![screenshot](documentation/responsiveness/responsive-4k-home.png) | ![screenshot](documentation/responsiveness/responsive-4k-about.png) | ![screenshot](documentation/responsiveness/responsive-4k-contact.png) | ![screenshot](documentation/responsiveness/responsive-4k-etc.png) | Noticeable scaling issues |
-| Google Pixel 7 Pro | ![screenshot](documentation/responsiveness/responsive-pixel-home.png) | ![screenshot](documentation/responsiveness/responsive-pixel-about.png) | ![screenshot](documentation/responsiveness/responsive-pixel-contact.png) | ![screenshot](documentation/responsiveness/responsive-pixel-etc.png) | Works as expected |
-| iPhone 14 | ![screenshot](documentation/responsiveness/responsive-iphone-home.png) | ![screenshot](documentation/responsiveness/responsive-iphone-about.png) | ![screenshot](documentation/responsiveness/responsive-iphone-contact.png) | ![screenshot](documentation/responsiveness/responsive-iphone-etc.png) | Works as expected |
-| repeat for any other tested devices | x | x | x | x | x |
-
-## Lighthouse Audit
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
-
-| Page | Mobile | Desktop | Notes |
-| --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
-
-## Defensive Programming
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
