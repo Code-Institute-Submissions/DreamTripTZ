@@ -113,7 +113,7 @@ function search() {
     destinations.forEach(destination => {
         const destinationText = destination.textContent.toLowerCase();
 
-        if (destination.classList.contains(inputValue) || inputValue.includes("all") || destinationText.includes(inputValue)) {
+        if (destination.classList.contains(inputValue) || inputValue.includes === 'all' || destinationText.includes(inputValue)) {
             destination.classList.remove("hide");
         } else if (inputValue.value == "") {
             destination.classList.add("hide");
