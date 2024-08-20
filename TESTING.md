@@ -197,6 +197,7 @@ This section outlines the testing procedures for the key features of the project
 
 - I tested the results counter function with various terms to check that the text display would update dynamically. 
 - I made sure that the results counter would reset to 0 when clearing the the text input or pressing the 'Clear Text' button option. 
+- I checked inside the Code that on the live/deplyed site that each link opens in a new tab. 
 
 ### Additional Features for Testing
 
