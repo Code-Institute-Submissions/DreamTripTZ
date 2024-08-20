@@ -70,8 +70,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| index.html | ![screenshot](documentation/lighthouse/index-mobile.png) | ![screenshot](documentation/lighthouse/index-desktop.png) |major performance impact due to high resource loading |
-| 404.html | ![screenshot](documentation/lighthouse/404-mobile.png) | ![screenshot](documentation/lighthouse/404-desktop.png) | major performance impact due to high resource loading  | 
+| index.html | ![screenshot](documentation/lighthouse/index-mobile.png) | ![screenshot](documentation/lighthouse/index-desktop.png) | performance impact due to high resource loading |
+| 404.html | ![screenshot](documentation/lighthouse/404-mobile.png) | ![screenshot](documentation/lighthouse/404-desktop.png) |  performance impact due to high resource loading  | 
 
 
 **Comment**:
@@ -130,7 +130,7 @@ This section outlines the testing procedures for the key features of the project
 - I confirmed that the final stage of the quiz provides accurate content with the correct corresponding external link.
 
 
-> **Note**:  'Ras Kutani' is, in fact, both a "hot beach" destination, as well as a traditional spa destination.  
+> [!NOTE] 'Ras Kutani' is, in fact, both a "hot beach" destination, as well as a traditional spa destination.  
 
 <details>
     <summary>See Table of Proof </summary>

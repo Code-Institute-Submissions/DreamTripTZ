@@ -175,7 +175,7 @@ While a traditional search engine provides answers to specific terms, the simple
 
 ## Testing
 
-> **Note:**  
+> [!NOTE]  
 > For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
