@@ -187,6 +187,11 @@ This section outlines the testing procedures for the key features of the project
 - I checked that clicking the filter results button for 'Relaxation', 'Adventure', and 'Education' are working and providing accurete results, matching the Quiz Final Results. 
 - I tested each button with multiple clicks to ensure that bug free buttons. 
 
+**Filter Results counter**:
+
+- I tested the results counter function with various terms to check that the text display would update dynamically. 
+- I made sure that the results counter would reset to 0 when clearing the the text input or pressing the 'Clear Text' button option. 
+
 ### Additional Features for Testing
 
 #### Navigation Features
@@ -220,24 +225,6 @@ I confirmed that the logo functions as a home button, allowing users to return t
 ### Conclusion
 
 I ensure that all interactive elements and navigation features are thoroughly evaluated for functionality and user experience
-
-Defensive programming was manually tested with the below user acceptance testing:
-
-| Page | Expectation | Test | Result | Fix | Screenshot |
-| --- | --- | --- | --- | --- | --- |
-| Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature06.png) |
-| Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
 
 ## Bugs
 
