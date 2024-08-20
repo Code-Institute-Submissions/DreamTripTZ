@@ -1,6 +1,6 @@
 # Testing
 
-> **Note:**  
+> [!NOTE] 
 > Return back to the [README.md](README.md) file.
 
 
@@ -90,7 +90,8 @@ This section outlines the testing procedures for the key features of the project
 
 ### Quiz 
 
-> [!NOTE] Please don't miss the < details > elements to see a Table of Proof for both Quiz Functionality and Final Quiz Results
+> [!NOTE] 
+> Please don't miss the < details > elements to see a Table of Proof for both Quiz Functionality and Final Quiz Results
 
 **Navigation to Quiz**:
 
@@ -134,7 +135,8 @@ This section outlines the testing procedures for the key features of the project
 
 **TABLE OF PROOF**
 
-> [!NOTE] 'Ras Kutani' is, in fact, both a "hot beach" destination, as well as a traditional spa destination.  
+> [!NOTE] 
+> 'Ras Kutani' is, in fact, both a "hot beach" destination, as well as a traditional spa destination.  
 
 <details>
     <summary>See Table of Proof </summary>
@@ -263,5 +265,6 @@ The reason for this behavior was unclear, even after fixing it, but it might hav
 
 ## Unfixed Bugs
 
-> **NOTE**  
+> [!NOTE]
 > There are no remaining bugs that I am aware of.
+
