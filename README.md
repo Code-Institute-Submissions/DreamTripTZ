@@ -58,6 +58,8 @@ source: [amiresponsive](https://ui.dev/amiresponsive?url=https://d0bledore.githu
 
 - **Link Hover Effects**: Links change to rgb(0, 110, 255) on hover, a bright blue that stands out against the dark footer background, indicating interactivity. This color is commonly associated with hyperlinks and helps guide user interaction.
 
+- **Fiter Links**: The links displayed in the filter section as search results are colored seagreen, which complements the overall theme. Although the number of links can be overwhelming, the seagreen color uniquely blends in while standing out, making it easier to follow the descriptions of the filter content.
+
 #### Hover Effects 
 
 - **General Hover Effects**: For elements like buttons and the #label-toggler (the label element which opens a dropdown menu), the hover background color is rgb(202, 202, 202), a light gray. This subtle change provides visual feedback without being too distracting, maintaining the overall elegance of the design.
