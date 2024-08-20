@@ -154,7 +154,14 @@ It includes a hyperlink allowing users to easily return to the index.html page.
 
 ### Future Features 
 
-To be continued .. 
+**Completeness** 
+
+The primary goal of this site is to achieve completeness and comprehensiveness in showcasing the vast opportunities available in the tourism industry in Tanzania. Currently, the site provides 37 total results for 'all options' in the filter section, which is significantly lower than the actual diversity of opportunities in Tanzania. The country offers an overwhelming array of experiences, and our site aims to provide an intuitive solution as a first step. While the current approach involves using a quiz to guide users to results, it is clear that the variety of options needs to be expanded. For instance, the current offering of 9 adventure activities does not fully represent the range of opportunities available. It is crucial to avoid overwhelming the end user, so while providing a single solution is ideal, the number of questions and alternatives must be increased to better reflect reality.
+
+**Filtering more intuitive** 
+
+While a traditional search engine provides answers to specific terms, the simple search function currently employed is tailored specifically to this site. However, what if the filtering process were more intuitive? Incorporating popular destinations makes sense, but it could also be combined with a quiz format. Imagine an intuitive search experience where users see live results and can pause their search whenever they encounter an appealing image of a potential travel destination. This would function as a real-time search feature. By answering one question at a time, starting with budget considerations, users would be presented with options as they progress through the quiz. This approach would not separate the search and quiz into two distinct entities but would instead offer a more intuitive, real-world, conversational, and instant-results-driven way of finding travel options.
+
 
 ## Tools & Technologies Used
 
