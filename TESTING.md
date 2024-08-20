@@ -129,7 +129,7 @@ This section outlines the testing procedures for the key features of the project
 - I confirmed that the final stage of the quiz provides accurate content with the correct corresponding external link.
 
 
-> **Note**:  'Ras Kutani' is, in fact, both a "beach" destination, as well as a traditional spa destination.  
+> **Note**:  'Ras Kutani' is, in fact, both a "hot beach" destination, as well as a traditional spa destination.  
 
 <details>
     <summary>See Table of Proof </summary>
@@ -140,20 +140,29 @@ This section outlines the testing procedures for the key features of the project
 | wellness | luxury safari lodge 'one nature Nyaruswiga' in Serengeti | Pass | ![screenshot](documentation/testing/link/wellness.png) | 
 | beauty |  the spa at the Residence Zanzibar | Pass | ![screenshot](documentation/testing/link/beauty.png) | 
 | warm | Nungwi Beach, Zanzibar | Pass | ![screenshot](documentation/testing/link/warm.png) | 
-| hot | -- | --- | --- |![screenshot](documentation/testing/link/hot.png) | 
+| hot | Ras Kutani | Pass |![screenshot](documentation/testing/link/hot.png) | 
 | mild |  Mafia Island | Pass | ![screenshot](documentation/testing/link/mild.png) | 
-
-| moderate |   'Ras Kutani' | Pass | ![screenshot](documentation/testing/link/ | 
-| intense |   'Ras Kutani' | Pass | ![screenshot](documentation/ | 
-| archaeolgy |   'Ras Kutani' | Pass | ![screenshot](documentation/ | 
-| indigenous |   'Ras Kutani' | Pass | ![screenshot](documentation/ | 
-| colonial |   'Ras Kutani' | Pass | ![screenshot](documentation/ | 
-| wildlife | | --- | --- | ![screenshot](documentation/ | 
-| farming | -- | --- | ![screenshot](documentation/ | 
-| biology | -- | --- | ![screenshot](documentation/ | 
-| visual | -- | --- | ![screenshot](documentation/ | 
-| performance -- | --- | ![screenshot](documentation/ | 
-| literature | -- | --- | ![screenshot](documentation/ | 
+| walks | Ngorongoro Crater Lodge | Pass | ![screenshot](documentation/testing/link/walks.png) | 
+| visits | Arusha Coffee Lodge  | Pass | ![screenshot](documentation/testing/link/visits.png) | 
+| relax | Gibb's Farm | Pass | ![screenshot](documentation/testing/link/relax.png) | 
+| guides | Guided safari in Tarangire National Park | Pass | ![screenshot](documentation/testing/link/guide.png) | 
+| tours | Cultural tour to Maasai villages in Ngorongoro Conservation Area | Pass | ![screenshot](documentation/testing/link/tour.png) | 
+| cultures | Coffee plantation experience near Moshi | Pass | ![screenshot](documentation/testing/link/culture.png) | 
+| water | Snorkeling and diving in Zanzibar | Pass | ![screenshot](documentation/testing/link/water.png) | 
+| land | Horseback riding safaris in the Serengeti | Pass | ![screenshot](documentation/testing/link/land.png) | 
+| both | Chemka Hot Springs swimming and exploration | Pass | ![screenshot](documentation/testing/link/both.png) | 
+| climbing | Mount Kilimanjaro climb | Pass | ![screenshot](documentation/testing/link/climbing.png) | 
+| rafting | White water rafting on the Rufiji River | Pass | ![screenshot](documentation/testing/link/rafting.png) | 
+| wilderness  | Wilderness expedition in Ruaha National Park | Pass | ![screenshot](documentation/testing/link/wilderness.png) | 
+| archaeolgy |   Oldupai/Olduvai Gorge | Pass | ![screenshot](documentation/testing/link/archaeology.png) | 
+| indigenous |   Lake Eyasi | Pass | ![screenshot](documentation/testing/link/indigenous.png) | 
+| colonial |   Stone Town, Zanzibar | Pass | ![screenshot](documentation/testing/link/colonial.png) | 
+| wildlife | Serengeti National Park research center | Pass | ![screenshot](documentation/testing/link/wildlife.png) |
+| farming | Mulala village tour | Pass | ![screenshot](documentation/testing/link/farming.png) |
+| biology | Udzungwa Mountains National Park (biodiversity hotspot) | Pass | ![screenshot](documentation/testing/link/biology.png) |
+| visual | Tingatinga painting workshops in Dar es Salaam | Pass | ![screenshot](documentation/testing/link/visual.png) |
+| performance | Traditional dance performances in Bagamoyo | Pass | ![screenshot](documentation/testing/link/performance.png) |
+| literature | Swahili poetry and storytelling sessions in Zanzibar | Pass | ![screenshot](documentation/testing/link/literature.png) |
 
 </details>
 
@@ -209,61 +218,7 @@ I confirmed that the logo functions as a home button, allowing users to return t
 
 ### Conclusion
 
-I ensure that all interactive elements and navigation features are thoroughly evaluated for functionality and user experience.
-
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-MS3 (Flask) | MS4/PP4/PP5 (Django):
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable.
-Ideally, tests cases should focus on each individual section of every page on the website.
-Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine,
-consider documenting tests on each element of the page
-(ie. button clicks, input box validation, navigation links, etc.) by testing them in their happy flow,
-and also the bad/exception flow, mentioning the expected and observed results,
-and drawing a parallel between them where applicable.
-
-Consider using the following format for manual test cases:
-
-Expected Outcome / Test Performed / Result Received / Fixes Implemented
-
-- **Expected**: "Feature is expected to do X when the user does Y."
-- **Testing**: "Tested the feature by doing Y."
-- (either) **Result**: "The feature behaved as expected, and it did Y."
-- (or) **Result**: "The feature did not respond to A, B, or C."
-- **Fix**: "I did Z to the code because something was missing."
-
-Use the table below as a basic start, and expand on it using the logic above.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+I ensure that all interactive elements and navigation features are thoroughly evaluated for functionality and user experience
 
 Defensive programming was manually tested with the below user acceptance testing:
 
@@ -283,57 +238,11 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature08.png) |
 | repeat for all remaining pages | x | x | x | x | x |
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
-
-When in doubt, use the above method instead, and delete the table below.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-| Page | User Action | Expected Result | Pass/Fail | Comments |
-| --- | --- | --- | --- | --- |
-| Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
-
-
 ## Bugs
 
 ### Text Input Field Page Reset 
 
 Initially, I used a form element in HTML to implement an easy reset button for the text input area. However, this became redundant when JavaScript was introduced.
-
 
 The bug was that, due to the form elements, hitting enter in the text input area caused the site to reset, redirecting the user back to the landing page. This was particularly frustrating for mobile users, who would press enter to exit the input box and view results. Replacing the redundant form elements with div elements resolved the issue. Now, the form does not reset because there is no form anymore.
 
