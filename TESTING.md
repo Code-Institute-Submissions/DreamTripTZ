@@ -90,6 +90,8 @@ This section outlines the testing procedures for the key features of the project
 
 ### Quiz 
 
+> [!NOTE] Please don't miss the < details > elements to see a Table of Proof for both Quiz Functionality and Final Quiz Results
+
 **Navigation to Quiz**:
 
 - I verifed that the quiz can be accessed via the "Find Your Perfect Trip" button on the landing  page and the header navigation link.
@@ -102,6 +104,7 @@ This section outlines the testing procedures for the key features of the project
 - I verified that each option (relaxation, adventure, education) generates three new buttons and updates the image accordingly.
 - I made sure that each subsequent button press continues to reveal new options and images without any console errors.
 
+**TABLE OF PROOF**
 <details>
     <summary>See Table of Proof</summary>  
 
@@ -129,6 +132,7 @@ This section outlines the testing procedures for the key features of the project
 
 - I confirmed that the final stage of the quiz provides accurate content with the correct corresponding external link.
 
+**TABLE OF PROOF**
 
 > [!NOTE] 'Ras Kutani' is, in fact, both a "hot beach" destination, as well as a traditional spa destination.  
 
@@ -221,6 +225,8 @@ I confirmed that the logo functions as a home button, allowing users to return t
 
 - I tested the custom error page by entering an incorrect URL, ensuring it displays the intended image and provides a hyperlink back to the homepage.
 - I tested that the hyperlink takes the user back to index.html page. 
+
+![screenshot](documentation/features/error-page.png)
 
 ### Conclusion
 
