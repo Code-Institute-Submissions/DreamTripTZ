@@ -91,7 +91,7 @@ This section outlines the testing procedures for the key features of the project
 ### Quiz 
 
 > [!NOTE] 
-> Please don't miss the < details > elements to see a Table of Proof for both Quiz Functionality and Final Quiz Results
+> Please don't miss the `<details>` elements to see a Table of Proof for both Quiz Functionality and Final Quiz Results
 
 **Navigation to Quiz**:
 
