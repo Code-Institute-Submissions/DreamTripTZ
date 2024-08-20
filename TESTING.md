@@ -217,7 +217,7 @@ I confirmed that the logo functions as a home button, allowing users to return t
 - I verified that the "Go up!" option successfully apears at a certain time when scrolling. I tested it on mobile and desktop devices.
 - I tested the 'Go up!' button to sucessfully take the user to the top of the page. 
 
-**Error Page**:
+#### Error Page
 
 - I tested the custom error page by entering an incorrect URL, ensuring it displays the intended image and provides a hyperlink back to the homepage.
 - I tested that the hyperlink takes the user back to index.html page. 
