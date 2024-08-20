@@ -99,6 +99,13 @@ For added convenience, after completing the quiz, users have the option to visit
 
 ![screenshot](documentation/features/all-options.png)
 
+- **Results counter** 
+
+My site features a dynamic results counter that displays the number of search results for the term entered in the text input field. This feature provides users with immediate feedback on the volume of content available for their query, enhancing the search experience by allowing them to gauge the breadth of information at a glance.
+
+![screenshot](documentation/features/filter-count-adventure.png)
+![screenshot](documentation/features/filter-count-water.png)
+
 
 
 #### Navigation Features
