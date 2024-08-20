@@ -105,21 +105,21 @@ This section outlines the testing procedures for the key features of the project
 <details>
     <summary>See Table of Proof</summary>  
 
-| Button | Expectation | Result | Fix | Screenshot |
+| Button | Expectation | Result | Screenshot |
 | --- |--- | --- | --- | --- | 
-| 'Take the Test!' | Reveals 3 buttons: relaxation, adventure, education & reveals new image: airplane on sky during golden hour | Pass | --- | ![screenshot](documentation/testing/buttons/quiz-start.png) | 
-| relaxation |  Reveals 3 buttons: spa, beach, mountain & reveals new image: a white hanging bed | Pass | --- | ![screenshot](documentation/testing/buttons/relaxation.png) | 
-| spa |  Reveals 3 buttons: traditional, wellness, beauty & reveals new image: close-up of an oil burner with a lit candle | Pass | --- | ![screenshot](documentation/testing/buttons/spa.png) | 
-| beach |  Reveals 3 buttons: warm, hot, mild & reveals new image: Zanzibar Beach Image | Pass | --- | ![screenshot](documentation/testing/buttons/beach.png) | 
-| mountain |  Reveals 3 buttons: walks, visits, relax & reveals new image: panoramic mountain landscape | Pass | --- | ![screenshot](documentation/testing/buttons/mountain.png) | 
-| adventure |  Reveals 3 buttons: mild, moderate, intense & reveals new image: giraffe spotting out of safari car | Pass | --- | ![screenshot](documentation/testing/buttons/adventure.png) | 
-| mild |  Reveals 3 buttons: guides, tours, cultures & reveals new image: a giraffe poking its head out | Pass | --- | ![screenshot](documentation/testing/buttons/mild.png) | 
-| moderate |  Reveals 3 buttons: water, land, both & reveals new image: camping tent in the jungle | Pass | --- | ![screenshot](documentation/testing/buttons/moderate.png) | 
-| intense |  Reveals 3 buttons: climbing, rafting, wilderness & reveals new image: mount Kilimanjaro | Pass | --- | ![screenshot](documentation/testing/buttons/intense.png) | 
-| education |  Reveals 3 buttons: history, science, arts & reveals new image: statue sitting on top of wooden table | Pass | --- | ![screenshot](documentation/testing/buttons/education.png) | 
-| history |  Reveals 3 buttons: archaeology, indigenous, colonial & reveals new image: Stone Town Zanzibar | Pass | --- | ![screenshot](documentation/testing/buttons/history.png) | 
-| science |  Reveals 3 buttons: wildlife, farming, biology & reveals new image: a book shelf filled with science books | Pass | --- | ![screenshot](documentation/testing/buttons/science.png) | 
-| arts |  Reveals 3 buttons: visual, performance, literature & reveals new image: a bunch of different colored twine on display | Pass | --- | ![screenshot](documentation/testing/buttons/arts.png) | 
+| 'Take the Test!' | Reveals 3 buttons: relaxation, adventure, education & reveals new image: airplane on sky during golden hour | Pass  | ![screenshot](documentation/testing/buttons/quiz-start.png) | 
+| relaxation |  Reveals 3 buttons: spa, beach, mountain & reveals new image: a white hanging bed | Pass | ![screenshot](documentation/testing/buttons/relaxation.png) | 
+| spa |  Reveals 3 buttons: traditional, wellness, beauty & reveals new image: close-up of an oil burner with a lit candle | Pass | ![screenshot](documentation/testing/buttons/spa.png) | 
+| beach |  Reveals 3 buttons: warm, hot, mild & reveals new image: Zanzibar Beach Image | Pass | ![screenshot](documentation/testing/buttons/beach.png) | 
+| mountain |  Reveals 3 buttons: walks, visits, relax & reveals new image: panoramic mountain landscape | Pass | ![screenshot](documentation/testing/buttons/mountain.png) | 
+| adventure |  Reveals 3 buttons: mild, moderate, intense & reveals new image: giraffe spotting out of safari car | Pass | ![screenshot](documentation/testing/buttons/adventure.png) | 
+| mild |  Reveals 3 buttons: guides, tours, cultures & reveals new image: a giraffe poking its head out | Pass | ![screenshot](documentation/testing/buttons/mild.png) | 
+| moderate |  Reveals 3 buttons: water, land, both & reveals new image: camping tent in the jungle | Pass | ![screenshot](documentation/testing/buttons/moderate.png) | 
+| intense |  Reveals 3 buttons: climbing, rafting, wilderness & reveals new image: mount Kilimanjaro | Pass | ![screenshot](documentation/testing/buttons/intense.png) | 
+| education |  Reveals 3 buttons: history, science, arts & reveals new image: statue sitting on top of wooden table | Pass | ![screenshot](documentation/testing/buttons/education.png) | 
+| history |  Reveals 3 buttons: archaeology, indigenous, colonial & reveals new image: Stone Town Zanzibar | Pass | ![screenshot](documentation/testing/buttons/history.png) | 
+| science |  Reveals 3 buttons: wildlife, farming, biology & reveals new image: a book shelf filled with science books | Pass | ![screenshot](documentation/testing/buttons/science.png) | 
+| arts |  Reveals 3 buttons: visual, performance, literature & reveals new image: a bunch of different colored twine on display | Pass | ![screenshot](documentation/testing/buttons/arts.png) | 
 </details>
 
 <br>
@@ -134,20 +134,20 @@ This section outlines the testing procedures for the key features of the project
 <details>
     <summary>See Table of Proof </summary>
 
-| Button | Expected Link content | Result | Fix | Screenshot |
-| --- | --- | --- | --- | --- | 
-| traditional | Ras Kutani | Pass | --- | ![screenshot](documentation/testing/link/traditional.png) | 
-| wellness | luxury safari lodge 'one nature Nyaruswiga' in Serengeti | Pass | --- | ![screenshot](documentation/testing/link/wellness.png) | 
-| beauty |  the spa at the Residence Zanzibar | Pass | --- | ![screenshot](documentation/testing/link/beauty.png) | 
-| warm | Nungwi Beach, Zanzibar | Pass | --- | ![screenshot](documentation/testing/link/warm.png) | 
+| Button | Expected Link content | Result | Screenshot |
+| --- | --- | --- | --- | 
+| traditional | Ras Kutani | Pass | ![screenshot](documentation/testing/link/traditional.png) | 
+| wellness | luxury safari lodge 'one nature Nyaruswiga' in Serengeti | Pass | ![screenshot](documentation/testing/link/wellness.png) | 
+| beauty |  the spa at the Residence Zanzibar | Pass | ![screenshot](documentation/testing/link/beauty.png) | 
+| warm | Nungwi Beach, Zanzibar | Pass | ![screenshot](documentation/testing/link/warm.png) | 
 | hot | -- | --- | --- |![screenshot](documentation/testing/link/hot.png) | 
-| mild |  Mafia Island | Pass | --- | ![screenshot](documentation/testing/link/mild.png) | 
+| mild |  Mafia Island | Pass | ![screenshot](documentation/testing/link/mild.png) | 
 
-| moderate |   'Ras Kutani' | Pass | --- | ![screenshot](documentation/testing/link/ | 
-| intense |   'Ras Kutani' | Pass | --- | ![screenshot](documentation/ | 
-| archaeolgy |   'Ras Kutani' | Pass | --- | ![screenshot](documentation/ | 
-| indigenous |   'Ras Kutani' | Pass | --- | ![screenshot](documentation/ | 
-| colonial |   'Ras Kutani' | Pass | --- | ![screenshot](documentation/ | 
+| moderate |   'Ras Kutani' | Pass | ![screenshot](documentation/testing/link/ | 
+| intense |   'Ras Kutani' | Pass | ![screenshot](documentation/ | 
+| archaeolgy |   'Ras Kutani' | Pass | ![screenshot](documentation/ | 
+| indigenous |   'Ras Kutani' | Pass | ![screenshot](documentation/ | 
+| colonial |   'Ras Kutani' | Pass | ![screenshot](documentation/ | 
 | wildlife | | --- | --- | ![screenshot](documentation/ | 
 | farming | -- | --- | ![screenshot](documentation/ | 
 | biology | -- | --- | ![screenshot](documentation/ | 
