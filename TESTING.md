@@ -106,7 +106,7 @@ This section outlines the testing procedures for the key features of the project
     <summary>See Table of Proof</summary>  
 
 | Button | Expectation | Result | Screenshot |
-| --- |--- | --- | --- | --- | 
+| --- |--- | --- | --- |
 | 'Take the Test!' | Reveals 3 buttons: relaxation, adventure, education & reveals new image: airplane on sky during golden hour | Pass  | ![screenshot](documentation/testing/buttons/quiz-start.png) | 
 | relaxation |  Reveals 3 buttons: spa, beach, mountain & reveals new image: a white hanging bed | Pass | ![screenshot](documentation/testing/buttons/relaxation.png) | 
 | spa |  Reveals 3 buttons: traditional, wellness, beauty & reveals new image: close-up of an oil burner with a lit candle | Pass | ![screenshot](documentation/testing/buttons/spa.png) | 
@@ -120,6 +120,7 @@ This section outlines the testing procedures for the key features of the project
 | history |  Reveals 3 buttons: archaeology, indigenous, colonial & reveals new image: Stone Town Zanzibar | Pass | ![screenshot](documentation/testing/buttons/history.png) | 
 | science |  Reveals 3 buttons: wildlife, farming, biology & reveals new image: a book shelf filled with science books | Pass | ![screenshot](documentation/testing/buttons/science.png) | 
 | arts |  Reveals 3 buttons: visual, performance, literature & reveals new image: a bunch of different colored twine on display | Pass | ![screenshot](documentation/testing/buttons/arts.png) | 
+
 </details>
 
 <br>
